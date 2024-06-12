@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once '../helper/connection.php'; // Memuat file connection.php
 require_once '../vendor/autoload.php'; // Memuat TCPDF dan FPDI
 
@@ -63,7 +64,7 @@ function updateRoomInPdf($pdfFilePath, $room) {
 
         if ($pageNo == $pageCount) {
             $pdf->SetFont('', '', 9); // Set font size to 9
-            $pdf->Text(50, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
+            $pdf->Text(52, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
         }
     }
 
