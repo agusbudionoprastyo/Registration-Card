@@ -38,6 +38,7 @@ $row = mysqli_fetch_array($query);
             <form action="regform_update.php" method="post" enctype="multipart/form-data">
               <table cellpadding="8" class="w-100">
                 <input type="hidden" name="id" value="<?= $row['id'] ?>">
+                <input type="text" name="regcard" value="<?= $row['at_regform'] ?>">
                 <!-- Tambahkan onclick dan id pada setiap elemen label -->
                 <tr>
                     <td><b><label for="nama"></i>Name</label></b></td>
