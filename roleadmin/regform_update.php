@@ -19,27 +19,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Cek apakah file PDF ada
     if (file_exists($pdfFilePath)) {
-        // Proses pembaruan ruangan di PDF
-        if (updateRoomInPdf($pdfFilePath, $room)) {
-            // Proses pembaruan ruangan di database
-            if (updateRoomInDatabase($connection, $id, $room)) {
-                http_response_code(200);
-                $_SESSION['info'] = [
-                    'status' => 'success',
-                    'message' => 'Regcard berhasil diupdate'
-                ];
-            } else {
-                http_response_code(500);
-                $_SESSION['info'] = [
-                    'status' => 'failed',
-                    'message' => 'Gagal menyimpan data.'
-                ];
-            }
+        // Proses pembaruan ruangan di PDF dan database
+        if (updateRoom($connection, $pdfFilePath, $id, $room)) {
+            http_response_code(200);
+            $_SESSION['info'] = [
+                'status' => 'success',
+                'message' => 'Regcard berhasil diupdate'
+            ];
         } else {
             http_response_code(500);
             $_SESSION['info'] = [
                 'status' => 'failed',
-                'message' => 'Gagal memperbarui PDF.'
+                'message' => 'Gagal memperbarui data.'
             ];
         }
     } else {
@@ -52,7 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: regform.php');
 }
 
-function updateRoomInPdf($pdfFilePath, $room) {
+function updateRoom($connection, $pdfFilePath, $id, $room) {
+    // Update PDF
     $pdf = new Fpdi();
     $pageCount = $pdf->setSourceFile($pdfFilePath);
     for ($pageNo = 1; $pageNo <= $pageCount; $pageNo++) {
@@ -61,20 +53,21 @@ function updateRoomInPdf($pdfFilePath, $room) {
         $pdf->useTemplate($templateId);
 
         if ($pageNo == $pageCount) {
-            $pdf->SetFont('', '', 9); // Set font size to 9
-            $pdf->Text(51, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
+            $pdf->SetFont('', '', 9);
+            $pdf->Text(51, 40, $room);
         }
     }
-
-    // Simpan PDF ke jalur output
     $outputPdfPath = __DIR__ . '/../signed_doc/updated_regform.pdf';
-    return $pdf->Output($outputPdfPath, 'F');
-}
+    $pdf->Output($outputPdfPath, 'F');
 
-function updateRoomInDatabase($connection, $id, $room) {
+    // Update Database
     $updateQuery = "UPDATE regform SET room = ? WHERE id = ?";
     $stmt = mysqli_prepare($connection, $updateQuery);
     mysqli_stmt_bind_param($stmt, "ss", $room, $id);
-    return mysqli_stmt_execute($stmt);
+    if (mysqli_stmt_execute($stmt)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 ?>
