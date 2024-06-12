@@ -50,7 +50,7 @@ function updateRoomInPdf($pdfFilePath, $room) {
 
         if ($pageNo == $pageCount) {
             $pdf->SetFont('', '', 9); // Set font size to 9
-            $pdf->Text(60, 25, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
+            $pdf->Text(55, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
         }
     }
 
