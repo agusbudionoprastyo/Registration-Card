@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $pdfPathQuery->get_result();
     $row = $result->fetch_assoc();
     // $pdfFilePath = __DIR__ . $row['at_regform'];
-    $pdfFilePath = __DIR__ . '/../' . $row['at_regform'];
+    $pdfFilePath = __DIR__ . '/' . $row['at_regform'];
 
     // Cek apakah file PDF ada
     if (file_exists($pdfFilePath)) {
