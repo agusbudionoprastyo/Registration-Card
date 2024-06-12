@@ -24,19 +24,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Proses pembaruan ruangan di database
             if (updateRoomInDatabase($id, $room)) {
                 http_response_code(200);
-                echo "Regcard berhasil diupdate";
+                $_SESSION['info'] = [
+                    'status' => 'success',
+                    'message' => 'Regcard berhasil diupdate'
+                ];
             } else {
                 http_response_code(500);
-                echo "Gagal menyimpan data.";
+                $_SESSION['info'] = [
+                    'status' => 'failed',
+                    'message' => 'Gagal menyimpan data.'
+                ];
             }
         } else {
             http_response_code(500);
-            echo "Gagal memperbarui PDF.";
+            $_SESSION['info'] = [
+                'status' => 'failed',
+                'message' => 'Gagal memperbarui PDF.'
+            ];
         }
     } else {
         http_response_code(400);
-        echo "File PDF tidak ditemukan.";
+        $_SESSION['info'] = [
+            'status' => 'failed',
+            'message' => 'File PDF tidak ditemukan.'
+        ];
     }
+    header('Location: regform.php');
 }
 
 
@@ -50,7 +63,7 @@ function updateRoomInPdf($pdfFilePath, $room) {
 
         if ($pageNo == $pageCount) {
             $pdf->SetFont('', '', 9); // Set font size to 9
-            $pdf->Text(55, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
+            $pdf->Text(50, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
         }
     }
 
