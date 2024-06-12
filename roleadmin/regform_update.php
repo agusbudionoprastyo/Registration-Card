@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdfPathQuery->execute();
     $result = $pdfPathQuery->get_result();
     $row = $result->fetch_assoc();
-    // $pdfFilePath = __DIR__ . $row['at_regform'];
     $pdfFilePath = __DIR__ . '/' . $row['at_regform'];
 
     // Cek apakah file PDF ada
@@ -23,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Proses pembaruan ruangan di PDF
         if (updateRoomInPdf($pdfFilePath, $room)) {
             // Proses pembaruan ruangan di database
-            if (updateRoomInDatabase($id, $room)) {
+            if (updateRoomInDatabase($connection, $id, $room)) {
                 http_response_code(200);
                 $_SESSION['info'] = [
                     'status' => 'success',
@@ -53,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header('Location: regform.php');
 }
 
-
 function updateRoomInPdf($pdfFilePath, $room) {
     $pdf = new Fpdi();
     $pageCount = $pdf->setSourceFile($pdfFilePath);
@@ -64,7 +62,7 @@ function updateRoomInPdf($pdfFilePath, $room) {
 
         if ($pageNo == $pageCount) {
             $pdf->SetFont('', '', 9); // Set font size to 9
-            $pdf->Text(52, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
+            $pdf->Text(51, 40, $room); // Ubah posisi dan teks sesuai kebutuhan Anda
         }
     }
 
@@ -73,38 +71,10 @@ function updateRoomInPdf($pdfFilePath, $room) {
     return $pdf->Output($outputPdfPath, 'F');
 }
 
-function updateRoomInDatabase($id, $room) {
-    global $connection;
-
-    // Mulai transaksi
-    $connection->begin_transaction();
-
-    try {
-        // Prepare the SQL statement for updating the table regform
-        $stmt = $connection->prepare("UPDATE regform SET room = ? WHERE id = ?");
-        if ($stmt === false) {
-            throw new Exception("Prepare failed: " . $connection->error);
-        }
-
-        $stmt->bind_param("ss", $room, $id);
-
-        // Eksekusi pernyataan SQL
-        if (!$stmt->execute()) {
-            throw new Exception("Gagal menyimpan data: " . $stmt->error);
-        }
-
-        // Komit transaksi
-        $connection->commit();
-
-        return true;
-    } catch (Exception $e) {
-        // Rollback transaksi jika terjadi kesalahan
-        $connection->rollback();
-        echo "Gagal menyimpan data : " . $e->getMessage();
-        return false;
-    } finally {
-        // Menutup statement
-        $stmt->close();
-    }
+function updateRoomInDatabase($connection, $id, $room) {
+    $updateQuery = "UPDATE regform SET room = ? WHERE id = ?";
+    $stmt = mysqli_prepare($connection, $updateQuery);
+    mysqli_stmt_bind_param($stmt, "ss", $room, $id);
+    return mysqli_stmt_execute($stmt);
 }
 ?>
