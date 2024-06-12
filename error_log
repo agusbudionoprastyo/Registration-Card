@@ -1,0 +1,1565 @@
+[03-May-2024 17:10:51 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'dafamsem_ag'@'localhost' (using password: YES) in /home/dafm5634/public_html/card.dafam.cloud/helper/connection.php on line 7
+[03-May-2024 17:11:05 Asia/Jakarta] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'dafamsem_ag'@'localhost' (using password: YES) in /home/dafm5634/public_html/card.dafam.cloud/helper/connection.php on line 7
+[03-May-2024 17:11:05 Asia/Jakarta] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, bool given in /home/dafm5634/public_html/card.dafam.cloud/login.php on line 16
+[03-May-2024 17:11:05 Asia/Jakarta] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/dafm5634/public_html/card.dafam.cloud/login.php on line 18
+[04-May-2024 15:47:19 Asia/Jakarta] PHP Warning:  Unknown: open_basedir restriction in effect. File(/home/dafm5634/public_html/card.dafam.cloud/save_regf.php) is not within the allowed path(s): (disabled) in Unknown on line 0
+[04-May-2024 15:47:19 Asia/Jakarta] PHP Warning:  Unknown: Failed to open stream: Operation not permitted in Unknown on line 0
+[04-May-2024 15:47:19 Asia/Jakarta] PHP Fatal error:  Failed opening required '/home/dafm5634/public_html/card.dafam.cloud/save_regf.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in Unknown on line 0
+[04-May-2024 15:48:09 Asia/Jakarta] PHP Warning:  Unknown: open_basedir restriction in effect. File(/home/dafm5634/public_html/card.dafam.cloud/save_regf.php) is not within the allowed path(s): (disabled) in Unknown on line 0
+[04-May-2024 15:48:09 Asia/Jakarta] PHP Warning:  Unknown: Failed to open stream: Operation not permitted in Unknown on line 0
+[04-May-2024 15:48:09 Asia/Jakarta] PHP Fatal error:  Failed opening required '/home/dafm5634/public_html/card.dafam.cloud/save_regf.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in Unknown on line 0
+[04-May-2024 15:50:17 Asia/Jakarta] PHP Warning:  Unknown: open_basedir restriction in effect. File(/home/dafm5634/public_html/card.dafam.cloud/save_regf.php) is not within the allowed path(s): (disabled) in Unknown on line 0
+[04-May-2024 15:50:17 Asia/Jakarta] PHP Warning:  Unknown: Failed to open stream: Operation not permitted in Unknown on line 0
+[04-May-2024 15:50:17 Asia/Jakarta] PHP Fatal error:  Failed opening required '/home/dafm5634/public_html/card.dafam.cloud/save_regf.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in Unknown on line 0
+[04-May-2024 15:51:58 Asia/Jakarta] PHP Warning:  Unknown: open_basedir restriction in effect. File(/home/dafm5634/public_html/card.dafam.cloud/save_regf.php) is not within the allowed path(s): (disabled) in Unknown on line 0
+[04-May-2024 15:51:58 Asia/Jakarta] PHP Warning:  Unknown: Failed to open stream: Operation not permitted in Unknown on line 0
+[04-May-2024 15:51:58 Asia/Jakarta] PHP Fatal error:  Failed opening required '/home/dafm5634/public_html/card.dafam.cloud/save_regf.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in Unknown on line 0
+[04-May-2024 15:52:00 Asia/Jakarta] PHP Warning:  Unknown: open_basedir restriction in effect. File(/home/dafm5634/public_html/card.dafam.cloud/save_regf.php) is not within the allowed path(s): (disabled) in Unknown on line 0
+[04-May-2024 15:52:00 Asia/Jakarta] PHP Warning:  Unknown: Failed to open stream: Operation not permitted in Unknown on line 0
+[04-May-2024 15:52:00 Asia/Jakarta] PHP Fatal error:  Failed opening required '/home/dafm5634/public_html/card.dafam.cloud/save_regf.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in Unknown on line 0
+[13-May-2024 09:08:57 Asia/Jakarta] PHP Warning:  Version warning: Imagick was compiled against ImageMagick version 1808 but version 1809 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[17-May-2024 12:39:27 Asia/Jakarta] PHP Warning:  Undefined array key "id" in /home/dafm5634/public_html/card/sign_store.php on line 8
+[17-May-2024 12:43:16 Asia/Jakarta] PHP Warning:  Undefined array key "id" in /home/dafm5634/public_html/card/sign_store.php on line 8
+[18-May-2024 01:53:10 Asia/Jakarta] PHP Warning:  file_put_contents(try_pdf/regcard_1715876649.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/fpdf/fpdf.php on line 1026
+[18-May-2024 01:53:10 Asia/Jakarta] PHP Fatal error:  Uncaught Exception: FPDF error: Unable to create output file: try_pdf/regcard_1715876649.pdf in /home/dafm5634/public_html/card/fpdf/fpdf.php:267
+Stack trace:
+#0 /home/dafm5634/public_html/card/fpdf/fpdf.php(1027): FPDF->Error()
+#1 /home/dafm5634/public_html/card/sign_store.php(47): FPDF->Output()
+#2 {main}
+  thrown in /home/dafm5634/public_html/card/fpdf/fpdf.php on line 267
+[18-May-2024 01:56:57 Asia/Jakarta] PHP Warning:  require_once(fpdi/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:56:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:56:59 Asia/Jakarta] PHP Warning:  require_once(fpdi/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:56:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:57:04 Asia/Jakarta] PHP Warning:  require_once(fpdi/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:57:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:59:44 Asia/Jakarta] PHP Warning:  require_once(fpdi/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:59:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:59:47 Asia/Jakarta] PHP Warning:  require_once(fpdi/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 01:59:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 02:00:43 Asia/Jakarta] PHP Warning:  require_once(fpdi/src/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 02:00:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/src/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 02:00:49 Asia/Jakarta] PHP Warning:  require_once(fpdi/src/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 02:00:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/src/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 02:01:06 Asia/Jakarta] PHP Warning:  require_once(fpdi/src/fpdi.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 02:01:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/src/fpdi.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 27
+[18-May-2024 02:01:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "setasign\Fpdi\FpdfTpl" not found in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php:23
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(27): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php on line 23
+[18-May-2024 02:01:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "setasign\Fpdi\FpdfTpl" not found in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php:23
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(27): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php on line 23
+[18-May-2024 02:05:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "setasign\Fpdi\FpdfTpl" not found in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php:23
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(27): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php on line 23
+[18-May-2024 02:08:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "setasign\Fpdi\FpdfTpl" not found in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php:23
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(27): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/fpdi/src/Fpdi.php on line 23
+[18-May-2024 02:37:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "setasign\Fpdi\FpdfTpl" not found in /home/dafm5634/public_html/card/fpdi/Fpdi.php:23
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(27): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/fpdi/Fpdi.php on line 23
+[18-May-2024 02:38:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "setasign\Fpdi\FpdfTpl" not found in /home/dafm5634/public_html/card/fpdi/Fpdi.php:23
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(27): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/fpdi/Fpdi.php on line 23
+[18-May-2024 03:03:15 Asia/Jakarta] PHP Warning:  require_once(fpdi/src/autoload.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 3
+[18-May-2024 03:03:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdi/src/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 3
+[18-May-2024 03:06:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDI" not found in /home/dafm5634/public_html/card/sign_store.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 33
+[18-May-2024 03:06:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDI" not found in /home/dafm5634/public_html/card/sign_store.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 33
+[18-May-2024 03:06:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDI" not found in /home/dafm5634/public_html/card/sign_store.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 33
+[18-May-2024 03:13:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDI" not found in /home/dafm5634/public_html/card/sign_store.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 34
+[18-May-2024 03:18:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDI" not found in /home/dafm5634/public_html/card/sign_store.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 34
+[18-May-2024 03:18:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDI" not found in /home/dafm5634/public_html/card/sign_store.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 34
+[18-May-2024 03:18:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDI" not found in /home/dafm5634/public_html/card/sign_store.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 34
+[18-May-2024 03:22:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/dafm5634/public_html/card/sign_store.php on line 72
+[18-May-2024 03:26:58 Asia/Jakarta] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/dafm5634/public_html/card/sign_store.php on line 72
+[18-May-2024 03:29:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/dafm5634/public_html/card/sign_store.php on line 72
+[18-May-2024 03:29:53 Asia/Jakarta] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/dafm5634/public_html/card/sign_store.php on line 72
+[19-May-2024 15:07:18 Asia/Jakarta] PHP Warning:  require_once(tcpdf/src/tcpdf.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:07:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'tcpdf/src/tcpdf.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:07:28 Asia/Jakarta] PHP Warning:  require_once(tcpdf/src/tcpdf.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:07:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'tcpdf/src/tcpdf.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:07:30 Asia/Jakarta] PHP Warning:  require_once(tcpdf/src/tcpdf.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:07:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'tcpdf/src/tcpdf.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:08:02 Asia/Jakarta] PHP Warning:  require_once(tcpdf/src/tcpdf.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:08:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'tcpdf/src/tcpdf.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/sign_store.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 50
+[19-May-2024 15:10:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:20:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:21:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:22:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:22:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:22:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:22:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:27:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:27:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:29:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:53:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[19-May-2024 23:57:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[20-May-2024 00:00:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[20-May-2024 00:00:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[20-May-2024 00:00:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[20-May-2024 00:00:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[20-May-2024 00:00:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[20-May-2024 00:02:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "Com\Tecnick\Pdf\ClassObjects" not found in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php:42
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(50): require_once()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/tcpdf/src/Tcpdf.php on line 42
+[20-May-2024 00:06:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "TCPDF" not found in /home/dafm5634/public_html/card/sign_store.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 56
+[20-May-2024 00:41:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDF" not found in /home/dafm5634/public_html/card/sign_store.php:8
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 8
+[20-May-2024 00:44:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDF" not found in /home/dafm5634/public_html/card/sign_store.php:8
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 8
+[20-May-2024 00:47:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "FPDF" not found in /home/dafm5634/public_html/card/sign_store.php:8
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 8
+[20-May-2024 04:54:57 Asia/Jakarta] PHP Warning:  Undefined array key "pdf_file" in /home/dafm5634/public_html/card/sign_store.php on line 18
+[20-May-2024 04:54:57 Asia/Jakarta] PHP Warning:  Trying to access array offset on value of type null in /home/dafm5634/public_html/card/sign_store.php on line 18
+[20-May-2024 04:54:57 Asia/Jakarta] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home/dafm5634/public_html/card/sign_store.php:18
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(18): file_get_contents()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 18
+[20-May-2024 05:07:28 Asia/Jakarta] PHP Warning:  Version warning: Imagick was compiled against ImageMagick version 1808 but version 1809 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[20-May-2024 05:07:58 Asia/Jakarta] PHP Warning:  Version warning: Imagick was compiled against ImageMagick version 1808 but version 1809 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[20-May-2024 05:08:02 Asia/Jakarta] PHP Warning:  Version warning: Imagick was compiled against ImageMagick version 1808 but version 1809 is loaded. Imagick will run but may behave surprisingly in Unknown on line 0
+[20-May-2024 05:11:45 Asia/Jakarta] PHP Warning:  fopen(attachment_pdf/regcard_1716144447.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 05:11:45 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(50): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(20): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 05:13:21 Asia/Jakarta] PHP Warning:  fopen(attachment_pdf/regcard_1716144447.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 05:13:21 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(50): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(20): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 05:14:41 Asia/Jakarta] PHP Warning:  fopen(attachment_pdf/regcard_1716144447.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 05:14:41 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(50): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(20): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 05:16:31 Asia/Jakarta] PHP Warning:  fopen(): Remote host file access not supported, file://pdf_664a7a3ea1323.pdf in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/include/tcpdf_static.php on line 1811
+[20-May-2024 05:16:31 Asia/Jakarta] PHP Warning:  fopen(file://pdf_664a7a3ea1323.pdf): Failed to open stream: no suitable wrapper could be found in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/include/tcpdf_static.php on line 1811
+[20-May-2024 05:23:02 Asia/Jakarta] PHP Warning:  fopen(file:///home/dafm5634/public_html/cardsigned_doc/pdf_664a7bc68d2b0.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/include/tcpdf_static.php on line 1811
+[20-May-2024 05:43:47 Asia/Jakarta] PHP Warning:  fopen(file:///home/dafm5634/public_html/cardsigned_doc/RC_664a80a35832f.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/include/tcpdf_static.php on line 1811
+[20-May-2024 05:46:54 Asia/Jakarta] PHP Warning:  fopen(file:///home/dafm5634/public_html/cardsigned_doc/RC_664a815e7ceff.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/include/tcpdf_static.php on line 1811
+[20-May-2024 06:37:04 Asia/Jakarta] Output PDF Path: /home/dafm5634/public_html/card/signed_doc/RC_664a8d20bd4c9.pdf
+[20-May-2024 06:37:05 Asia/Jakarta] Unable to create output file: /home/dafm5634/public_html/card/signed_doc/RC_664a8d20bd4c9.pdf
+[20-May-2024 06:42:35 Asia/Jakarta] Output PDF Path: /home/dafm5634/public_html/card/signed_docRC_664a8e6b317e2.pdf
+[20-May-2024 06:42:35 Asia/Jakarta] Unable to create output file: /home/dafm5634/public_html/card/signed_docRC_664a8e6b317e2.pdf
+[20-May-2024 06:42:58 Asia/Jakarta] Output PDF Path: /home/dafm5634/public_html/card/signed_docRC_664a8e82ca3cf.pdf
+[20-May-2024 06:42:58 Asia/Jakarta] Directory is not writable: /home/dafm5634/public_html/card/signed_doc
+[20-May-2024 06:44:33 Asia/Jakarta] Output PDF Path: /home/dafm5634/public_html/card/signed_docRC_664a8ee18bce2.pdf
+[20-May-2024 06:44:33 Asia/Jakarta] Directory is not writable: /home/dafm5634/public_html/card/signed_doc
+[20-May-2024 06:46:45 Asia/Jakarta] Output PDF Path: /home/dafm5634/public_html/card/signed_docRC_664a8f65d76b0.pdf
+[20-May-2024 06:46:45 Asia/Jakarta] Directory is not writable: /home/dafm5634/public_html/card/signed_doc
+[20-May-2024 06:48:19 Asia/Jakarta] Output PDF Path: /home/dafm5634/public_html/card./signed_doc/RC_664a8fc3c130d.pdf
+[20-May-2024 06:48:19 Asia/Jakarta] Directory is not writable: /home/dafm5634/public_html/card/signed_doc
+[20-May-2024 06:49:22 Asia/Jakarta] Output PDF Path: /home/dafm5634/public_html/card/signed_doc/RC_664a900219338.pdf
+[20-May-2024 06:49:22 Asia/Jakarta] Directory is not writable: /home/dafm5634/public_html/card/signed_doc
+[20-May-2024 06:53:21 Asia/Jakarta] Unable to create output file: /home/dafm5634/public_html/card/signed_doc/RC_664a90f19c845.pdf
+[20-May-2024 07:00:24 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function addSignatureToPdf(), 2 passed in /home/dafm5634/public_html/card/sign_store.php on line 32 and exactly 3 expected in /home/dafm5634/public_html/card/sign_store.php:68
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(32): addSignatureToPdf()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 68
+[20-May-2024 07:04:28 Asia/Jakarta] Unable to create output file: /home/dafm5634/public_html/card/signed_doc/RC_664a938c8db38.pdf
+[20-May-2024 08:18:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected variable "$decodedSignature" in /home/dafm5634/public_html/card/sign_store.php on line 15
+[20-May-2024 08:24:27 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card../attachement_pdf/regcard_1716144447.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 08:39:29 Asia/Jakarta] PHP Parse error:  syntax error, unexpected single-quoted string "/attachement_pdf/" in /home/dafm5634/public_html/card/sign_store.php on line 27
+[20-May-2024 08:41:05 Asia/Jakarta] Unable to create output file: /home/dafm5634/public_html/card/signed_doc/RC_664aaa3097e2f.pdf
+[20-May-2024 08:48:11 Asia/Jakarta] Unable to create output file: /home/dafm5634/public_html/card/signed_doc/RC_664aabdacfc15.pdf
+[20-May-2024 09:12:41 Asia/Jakarta] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function addSignatureToPdf(), 0 passed in /home/dafm5634/public_html/card/sign_store.php on line 62 and exactly 3 expected in /home/dafm5634/public_html/card/sign_store.php:75
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(62): addSignatureToPdf()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 75
+[20-May-2024 09:17:00 Asia/Jakarta] Unable to create output file: /home/dafm5634/public_html/card/signed_doc/RC_664ab29c8d3e9.pdf
+[20-May-2024 11:10:01 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664ab4a465e23.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 11:10:01 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 12:56:00 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664ab4a465e23.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 12:56:00 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 12:56:19 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664ab4a465e23.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 12:56:19 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 12:57:26 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664ab4a465e23.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 12:57:26 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 13:03:28 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664ab4a465e23.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 13:03:28 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 13:05:31 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664ab4a465e23.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 13:05:31 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 13:09:18 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664ab4a465e23.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 13:09:18 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 13:12:04 Asia/Jakarta] PHP Warning:  Undefined array key "pdfFile" in /home/dafm5634/public_html/card/sign_store.php on line 12
+[20-May-2024 13:12:04 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 13:12:04 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 13:12:04 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[20-May-2024 14:07:01 Asia/Jakarta] PHP Warning:  Undefined array key "pdfFile" in /home/dafm5634/public_html/card/sign_store.php on line 12
+[20-May-2024 14:07:01 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 14:07:01 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 14:07:01 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[20-May-2024 14:07:50 Asia/Jakarta] PHP Warning:  Undefined array key "pdfFile" in /home/dafm5634/public_html/card/sign_store.php on line 12
+[20-May-2024 14:07:50 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 14:07:50 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 14:07:50 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[20-May-2024 14:08:18 Asia/Jakarta] PHP Warning:  Undefined array key "pdfFile" in /home/dafm5634/public_html/card/sign_store.php on line 12
+[20-May-2024 14:08:18 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 14:08:18 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 14:08:18 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[20-May-2024 14:15:25 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664af705680eb.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 14:15:25 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 14:15:42 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664af705680eb.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 14:15:42 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 14:16:07 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664af705680eb.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 14:16:07 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 14:17:47 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664af705680eb.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 14:17:47 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 14:19:11 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664af705680eb.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 14:19:11 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:07:19 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:07:19 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:07:25 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:07:25 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:07:37 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:07:37 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:08:53 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:08:53 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:12:36 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:12:36 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:19:51 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:19:51 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:19:59 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:19:59 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:20:10 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b043c49c68.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[20-May-2024 15:20:10 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[20-May-2024 15:20:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: mysqli_stmt::bind_param(): Argument #6 cannot be passed by reference in /home/dafm5634/public_html/card/sign_store.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 50
+[20-May-2024 15:51:32 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 15:51:32 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[20-May-2024 15:51:32 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[21-May-2024 10:27:23 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b6bfe5045b.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 10:27:23 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 10:43:13 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b6bfe5045b.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 10:43:13 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 10:46:10 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664b6bfe5045b.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 10:46:10 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(70): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:32:20 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664c3ecb72da6.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:32:20 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:32:30 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664c3ecb72da6.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:32:30 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:37:38 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664c402e1042d.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:37:38 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:37:47 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664c402e1042d.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:37:47 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:37:53 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/RC_664c402e1042d.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:37:53 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:45:44 Asia/Jakarta] PHP Warning:  mkdir(): Permission denied in /home/dafm5634/public_html/card/sign_store.php on line 21
+[21-May-2024 13:45:44 Asia/Jakarta] PHP Warning:  file_put_contents(/signature/signature_664c431820ec8.png): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 25
+[21-May-2024 13:45:44 Asia/Jakarta] PHP Warning:  mkdir(): Permission denied in /home/dafm5634/public_html/card/sign_store.php on line 33
+[21-May-2024 13:45:44 Asia/Jakarta] PHP Warning:  fopen(/attachement_pdf/../attachement_pdf/regcard_1716273925.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:45:44 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:45:51 Asia/Jakarta] PHP Warning:  mkdir(): Permission denied in /home/dafm5634/public_html/card/sign_store.php on line 21
+[21-May-2024 13:45:51 Asia/Jakarta] PHP Warning:  file_put_contents(/signature/signature_664c431f03ab7.png): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 25
+[21-May-2024 13:45:51 Asia/Jakarta] PHP Warning:  mkdir(): Permission denied in /home/dafm5634/public_html/card/sign_store.php on line 33
+[21-May-2024 13:45:51 Asia/Jakarta] PHP Warning:  fopen(/attachement_pdf/../attachement_pdf/regcard_1716273925.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:45:51 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 13:57:04 Asia/Jakarta] PHP Warning:  mkdir(): Permission denied in /home/dafm5634/public_html/card/sign_store.php on line 21
+[21-May-2024 13:57:04 Asia/Jakarta] PHP Warning:  file_put_contents(/signature/signature_664c45c0dede8.png): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/sign_store.php on line 25
+[21-May-2024 13:57:04 Asia/Jakarta] PHP Warning:  mkdir(): Permission denied in /home/dafm5634/public_html/card/sign_store.php on line 33
+[21-May-2024 13:57:04 Asia/Jakarta] PHP Warning:  fopen(/attachement_pdf/../attachement_pdf/regcard_1716273925.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[21-May-2024 13:57:04 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(37): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[21-May-2024 14:19:36 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[21-May-2024 14:19:36 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[21-May-2024 14:19:36 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[21-May-2024 14:24:00 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[21-May-2024 14:24:00 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[21-May-2024 14:24:00 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[21-May-2024 22:04:30 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[21-May-2024 22:04:30 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[21-May-2024 22:04:30 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[25-May-2024 19:24:33 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[25-May-2024 19:24:33 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[25-May-2024 19:24:33 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[25-May-2024 19:24:39 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[25-May-2024 19:24:39 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[25-May-2024 19:24:39 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[25-May-2024 19:27:46 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/undefined): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[25-May-2024 19:27:46 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[25-May-2024 19:29:18 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/undefined): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[25-May-2024 19:29:18 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[25-May-2024 19:30:10 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf/undefined): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[25-May-2024 19:30:10 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(100): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(38): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[26-May-2024 18:32:48 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException: This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php:257
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(209): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(67): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(158): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(206): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(182): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#8 /home/dafm5634/public_html/card/g_sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#9 /home/dafm5634/public_html/card/g_sign_store.php(37): addSignatureToPdf()
+#10 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php on line 257
+[26-May-2024 18:34:09 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException: This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php:257
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(209): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(67): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(158): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(206): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(182): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#8 /home/dafm5634/public_html/card/g_sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#9 /home/dafm5634/public_html/card/g_sign_store.php(37): addSignatureToPdf()
+#10 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php on line 257
+[26-May-2024 18:38:26 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException: This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php:257
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(209): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(67): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(158): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(206): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(182): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#8 /home/dafm5634/public_html/card/g_sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#9 /home/dafm5634/public_html/card/g_sign_store.php(37): addSignatureToPdf()
+#10 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php on line 257
+[27-May-2024 01:09:39 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\CrossReference\CrossReferenceException: This PDF document probably uses a compression technique which is not supported by the free parser shipped with FPDI. (See https://www.setasign.com/fpdi-pdf-parser for more details) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php:257
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(209): setasign\Fpdi\PdfParser\CrossReference\CrossReference->initReaderInstance()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php(67): setasign\Fpdi\PdfParser\CrossReference\CrossReference->readXref()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(158): setasign\Fpdi\PdfParser\CrossReference\CrossReference->__construct()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(206): setasign\Fpdi\PdfParser\PdfParser->getCrossReference()
+#4 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(182): setasign\Fpdi\PdfParser\PdfParser->getCatalog()
+#5 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#6 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#7 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#8 /home/dafm5634/public_html/card/g_sign_store.php(99): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#9 /home/dafm5634/public_html/card/g_sign_store.php(37): addSignatureToPdf()
+#10 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/CrossReference/CrossReference.php on line 257
+[27-May-2024 13:33:13 Asia/Jakarta] PHP Warning:  Undefined array key "folio" in /home/dafm5634/public_html/card/g_sign_store.php on line 12
+[27-May-2024 13:37:32 Asia/Jakarta] PHP Warning:  Undefined array key "folio" in /home/dafm5634/public_html/card/g_sign_store.php on line 12
+[27-May-2024 13:38:52 Asia/Jakarta] PHP Warning:  Undefined array key "folio" in /home/dafm5634/public_html/card/g_sign_store.php on line 12
+[27-May-2024 14:37:49 Asia/Jakarta] PHP Warning:  Undefined array key "folio" in /home/dafm5634/public_html/card/sign_store.php on line 13
+[27-May-2024 14:50:39 Asia/Jakarta] PHP Warning:  Undefined array key "folio" in /home/dafm5634/public_html/card/sign_store.php on line 13
+[27-May-2024 16:00:51 Asia/Jakarta] PHP Warning:  Undefined array key "folio" in /home/dafm5634/public_html/card/sign_store.php on line 13
+[27-May-2024 16:07:40 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[27-May-2024 16:07:42 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_66544d5c94274.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[27-May-2024 16:15:18 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[27-May-2024 16:15:18 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[27-May-2024 16:15:18 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[27-May-2024 16:15:18 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(101): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(39): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[27-May-2024 16:52:07 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[27-May-2024 16:52:07 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_665457c7e1601.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[27-May-2024 23:32:00 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[27-May-2024 23:32:00 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_6654b5806c86d.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[27-May-2024 23:37:25 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[27-May-2024 23:37:25 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_6654b6c5c66d2.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[27-May-2024 23:48:37 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[27-May-2024 23:48:37 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_6654b965a17c0.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[28-May-2024 00:01:32 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[28-May-2024 00:01:34 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_6654bc6c9ace6.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[28-May-2024 00:04:29 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[28-May-2024 00:04:29 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_6654bd1d37007.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[28-May-2024 00:05:27 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[28-May-2024 00:05:27 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[28-May-2024 00:05:27 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[28-May-2024 00:05:27 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(101): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(39): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[28-May-2024 00:05:52 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[28-May-2024 00:05:52 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[28-May-2024 00:05:52 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[28-May-2024 00:05:52 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(101): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(39): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[28-May-2024 00:06:42 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[28-May-2024 00:06:42 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_349981_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[28-May-2024 00:06:42 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(101): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(39): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[28-May-2024 00:07:07 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[28-May-2024 00:07:07 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_349981_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[28-May-2024 00:07:07 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(101): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(39): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[28-May-2024 00:08:49 Asia/Jakarta] PHP Warning:  Undefined array key "signature" in /home/dafm5634/public_html/card/sign_store.php on line 9
+[28-May-2024 00:08:49 Asia/Jakarta] PHP Warning:  imagecreatefrompng(): &quot;/home/dafm5634/public_html/card/signature/signature_6654be21b8d20.png&quot; is not a valid PNG file in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 7149
+[29-May-2024 02:06:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home/dafm5634/public_html/card/sign_store.php:103
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(103): mysqli->prepare()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 103
+[29-May-2024 02:07:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: mysqli object is already closed in /home/dafm5634/public_html/card/sign_store.php:103
+Stack trace:
+#0 /home/dafm5634/public_html/card/sign_store.php(103): mysqli->prepare()
+#1 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 103
+[29-May-2024 02:11:01 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 42
+[29-May-2024 02:11:01 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 42
+[29-May-2024 02:11:01 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 42
+[29-May-2024 02:11:01 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 02:13:37 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 42
+[29-May-2024 02:13:37 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 42
+[29-May-2024 02:13:37 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 42
+[29-May-2024 02:13:37 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 02:18:25 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:18:25 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:20:12 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:20:12 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:20:18 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[29-May-2024 02:20:18 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[29-May-2024 02:20:18 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[29-May-2024 02:20:46 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:20:46 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:21:03 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:21:03 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:26:13 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:26:13 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:27:30 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:27:30 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:27:45 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:27:45 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureAndInfoToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:29:16 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:29:16 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(103): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(41): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:29:36 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350097_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 02:29:36 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(103): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(41): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 02:37:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function addSignatureToPdf() in /home/dafm5634/public_html/card/sign_store.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 41
+[29-May-2024 02:38:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function addSignatureToPdf() in /home/dafm5634/public_html/card/sign_store.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 41
+[29-May-2024 02:38:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function addSignatureToPdf() in /home/dafm5634/public_html/card/sign_store.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 41
+[29-May-2024 09:43:46 Asia/Jakarta] PHP Warning:  foreach() argument must be of type array|object, int given in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 5706
+[29-May-2024 09:50:31 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350105_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 09:50:31 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 09:51:13 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: float + string in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php:5683
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php(5338): TCPDF->getCellBorder()
+#1 /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php(5150): TCPDF->getCellCode()
+#2 /home/dafm5634/public_html/card/sign_store.php(135): TCPDF->Cell()
+#3 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/tecnickcom/tcpdf/tcpdf.php on line 5683
+[29-May-2024 09:51:28 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350105_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 09:51:28 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 09:53:25 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350105_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 09:53:25 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 09:54:26 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350105_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 09:54:26 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 09:55:44 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[29-May-2024 09:55:44 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[29-May-2024 09:55:44 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[29-May-2024 09:57:25 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_338945_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 09:57:25 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 09:58:08 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_338945_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 09:58:08 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 09:58:22 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350105_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 09:58:22 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 10:03:11 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_350105_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 10:03:11 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(123): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(42): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 10:05:09 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:05:09 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:05:09 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:05:09 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:06:30 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:06:30 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:06:30 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:06:30 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:07:38 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:07:38 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:07:38 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:07:38 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:07:42 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:07:42 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:07:42 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:07:42 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:08:33 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:08:33 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:08:33 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:08:33 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:10:21 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:10:21 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:10:21 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:10:21 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:13:02 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:13:02 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:13:02 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:13:02 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:15:03 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:15:03 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:15:03 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:15:03 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 10:15:26 Asia/Jakarta] PHP Warning:  Undefined variable $inputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:15:26 Asia/Jakarta] PHP Warning:  Undefined variable $signatureImagePath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:15:26 Asia/Jakarta] PHP Warning:  Undefined variable $outputPdfPath in /home/dafm5634/public_html/card/sign_store.php on line 44
+[29-May-2024 10:15:26 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: Invalid type in $file parameter (NULL) in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php:164
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#2 /home/dafm5634/public_html/card/sign_store.php(125): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#3 /home/dafm5634/public_html/card/sign_store.php(44): addSignatureToPdf()
+#4 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php on line 164
+[29-May-2024 11:03:53 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//signed_doc/regform_338945_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 11:03:53 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(102): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(40): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 11:14:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected variable "$email", expecting ")" in /home/dafm5634/public_html/card/sign_store.php on line 109
+[29-May-2024 11:14:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected variable "$email", expecting ")" in /home/dafm5634/public_html/card/sign_store.php on line 109
+[29-May-2024 11:15:16 Asia/Jakarta] PHP Parse error:  syntax error, unexpected variable "$email", expecting ")" in /home/dafm5634/public_html/card/sign_store.php on line 109
+[29-May-2024 11:15:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected variable "$email", expecting ")" in /home/dafm5634/public_html/card/sign_store.php on line 109
+[29-May-2024 11:16:08 Asia/Jakarta] PHP Parse error:  syntax error, unexpected variable "$email", expecting ")" in /home/dafm5634/public_html/card/sign_store.php on line 109
+[29-May-2024 11:19:00 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//attachement_pdf/regcard_338945_unsigned.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 11:19:00 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(102): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(40): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[29-May-2024 11:38:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Undefined constant "signatureFilePath" in /home/dafm5634/public_html/card/sign_store.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 40
+[29-May-2024 11:42:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Undefined constant "signatureFilePath" in /home/dafm5634/public_html/card/sign_store.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 40
+[29-May-2024 11:45:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Undefined constant "signatureFilePath" in /home/dafm5634/public_html/card/sign_store.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 40
+[29-May-2024 11:46:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Undefined constant "signatureFilePath" in /home/dafm5634/public_html/card/sign_store.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 40
+[29-May-2024 11:47:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Undefined constant "signatureFilePath" in /home/dafm5634/public_html/card/sign_store.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 40
+[29-May-2024 11:49:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Undefined constant "signatureFilePath" in /home/dafm5634/public_html/card/sign_store.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 40
+[29-May-2024 11:49:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Undefined constant "signatureFilePath" in /home/dafm5634/public_html/card/sign_store.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/sign_store.php on line 40
+[29-May-2024 12:02:22 Asia/Jakarta] PHP Warning:  fopen(/home/dafm5634/public_html/card/attachement_pdf//attachement_pdf/regcard_338945_unsigned.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[29-May-2024 12:02:22 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(103): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(40): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[30-May-2024 14:34:31 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[30-May-2024 14:34:31 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[30-May-2024 14:34:31 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(103): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(40): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
+[07-Jun-2024 23:21:50 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:21:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:28:30 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:28:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:29:16 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:29:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:01 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:02 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:03 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:20 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:21 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:32 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:30:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:33:38 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:33:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:33:39 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:33:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:33:45 Asia/Jakarta] PHP Warning:  require_once(../helper/connection.php): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:33:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required '../helper/connection.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/dafm5634/public_html/card/regform_update.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/dafm5634/public_html/card/regform_update.php on line 2
+[07-Jun-2024 23:50:39 Asia/Jakarta] PHP Warning:  fopen(/signed_doc/regform_349924_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[07-Jun-2024 23:50:39 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/regform_update.php(74): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/regform_update.php(25): updateRoomInPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[07-Jun-2024 23:53:13 Asia/Jakarta] PHP Warning:  fopen(/signed_doc/regform_349924_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[07-Jun-2024 23:53:13 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/regform_update.php(74): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/regform_update.php(25): updateRoomInPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[10-Jun-2024 08:03:34 Asia/Jakarta] PHP Warning:  fopen(/signed_doc/regform_349924_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[10-Jun-2024 08:03:34 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/regform_update.php(74): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/regform_update.php(25): updateRoomInPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[10-Jun-2024 11:03:48 Asia/Jakarta] PHP Warning:  fopen(/signed_doc/regform_349924_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[10-Jun-2024 11:03:48 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/regform_update.php(74): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/regform_update.php(25): updateRoomInPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[10-Jun-2024 11:40:57 Asia/Jakarta] PHP Warning:  fopen(/signed_doc/regform_349924_signed.pdf): Failed to open stream: No such file or directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 42
+[10-Jun-2024 11:40:57 Asia/Jakarta] PHP Fatal error:  Uncaught InvalidArgumentException: No stream given. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php:104
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php(43): setasign\Fpdi\PdfParser\StreamReader->__construct()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(177): setasign\Fpdi\PdfParser\StreamReader::createByFile()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(233): setasign\Fpdi\Tcpdf\Fpdi->getPdfReaderId()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/regform_update.php(74): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/regform_update.php(25): updateRoomInPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 104
+[11-Jun-2024 15:17:22 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[11-Jun-2024 15:17:22 Asia/Jakarta] PHP Notice:  fread(): Read of 8192 bytes failed with errno=21 Is a directory in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/StreamReader.php on line 421
+[11-Jun-2024 15:17:22 Asia/Jakarta] PHP Fatal error:  Uncaught setasign\Fpdi\PdfParser\PdfParserException: Unable to find PDF file header. in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php:131
+Stack trace:
+#0 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php(172): setasign\Fpdi\PdfParser\PdfParser->resolveFileHeader()
+#1 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfReader/PdfReader.php(84): setasign\Fpdi\PdfParser\PdfParser->getPdfVersion()
+#2 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(237): setasign\Fpdi\PdfReader\PdfReader->getPdfVersion()
+#3 /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/FpdiTrait.php(216): setasign\Fpdi\Tcpdf\Fpdi->setSourceFileWithParserParams()
+#4 /home/dafm5634/public_html/card/sign_store.php(103): setasign\Fpdi\Tcpdf\Fpdi->setSourceFile()
+#5 /home/dafm5634/public_html/card/sign_store.php(40): addSignatureToPdf()
+#6 {main}
+  thrown in /home/dafm5634/public_html/card/vendor/setasign/fpdi/src/PdfParser/PdfParser.php on line 131
