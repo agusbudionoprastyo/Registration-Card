@@ -32,14 +32,48 @@ use setasign\Fpdi\Tcpdf\Fpdi;
 //     echo "Metode tidak diizinkan.";
 // }
 
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // Ambil id, ruangan, dan file PDF dari form
+//     $id = isset($_POST['id']) ? $_POST['id'] : '';
+//     $room = isset($_POST['room']) ? $_POST['room'] : '';
+//     $pdfFilePath = isset($_FILES['pdf_file']['tmp_name']) ? $_FILES['pdf_file']['tmp_name'] : '';
+
+//     // Cek apakah file PDF telah diunggah
+//     if (!empty($pdfFilePath)) {
+//         // Proses pembaruan ruangan di PDF
+//         if (updateRoomInPdf($pdfFilePath, $room)) {
+//             // Proses pembaruan ruangan di database
+//             if (updateRoomInDatabase($id, $room)) {
+//                 http_response_code(200);
+//                 echo "Regcard berhasil diupdate";
+//             } else {
+//                 http_response_code(500);
+//                 echo "Gagal menyimpan data.";
+//             }
+//         } else {
+//             http_response_code(500);
+//             echo "Gagal memperbarui PDF.";
+//         }
+//     } else {
+//         http_response_code(400);
+//         echo "File PDF tidak ditemukan.";
+//     }
+// }
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Ambil id, ruangan, dan file PDF dari form
     $id = isset($_POST['id']) ? $_POST['id'] : '';
     $room = isset($_POST['room']) ? $_POST['room'] : '';
-    $pdfFilePath = isset($_FILES['pdf_file']['tmp_name']) ? $_FILES['pdf_file']['tmp_name'] : '';
 
-    // Cek apakah file PDF telah diunggah
-    if (!empty($pdfFilePath)) {
+    // Mengambil path file PDF dari database
+    $pdfPathQuery = $connection->prepare("SELECT at_regform FROM regform WHERE id = ?");
+    $pdfPathQuery->bind_param("s", $id);
+    $pdfPathQuery->execute();
+    $result = $pdfPathQuery->get_result();
+    $row = $result->fetch_assoc();
+    $pdfFilePath = __DIR__ . $row['at_regform'];
+
+    // Cek apakah file PDF ada
+    if (file_exists($pdfFilePath)) {
         // Proses pembaruan ruangan di PDF
         if (updateRoomInPdf($pdfFilePath, $room)) {
             // Proses pembaruan ruangan di database
