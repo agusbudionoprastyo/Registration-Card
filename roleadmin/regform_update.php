@@ -57,7 +57,7 @@ function updateRoom($connection, $pdfFilePath, $id, $room) {
             $pdf->Text(51, 40, $room);
         }
     }
-    $outputPdfPath = __DIR__ . $pdfFilePath;
+    $outputPdfPath = $pdfFilePath;
     $pdf->Output($outputPdfPath, 'F');
 
     // Update Database
