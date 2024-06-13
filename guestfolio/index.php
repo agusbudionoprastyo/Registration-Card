@@ -36,8 +36,21 @@
                 height: auto; /* Tinggi canvas disesuaikan secara otomatis */
             }
 
+            .floating-btn-pair {
+                position: fixed; /* Membuat posisi tombol tetap dan melayang */
+                bottom: 80px; /* Jarak dari bawah */
+                right: 20px; /* Jarak dari kanan */
+                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+            }
 
-            .floating-btn {
+            .floating-btn-unpair {
+                position: fixed; /* Membuat posisi tombol tetap dan melayang */
+                bottom: 50px; /* Jarak dari bawah */
+                right: 20px; /* Jarak dari kanan */
+                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+            }
+
+            .floating-btn-unlink {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
                 bottom: 20px; /* Jarak dari bawah */
                 right: 20px; /* Jarak dari kanan */
@@ -76,8 +89,9 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
-        <button type="button" class="floating-btn" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
-        <button type="button" class="floating-btn" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
+        <button type="button" class="floating-btn-pair" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <button type="button" class="floating-btn-unpair" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
+        <button type="button" class="floating-btn-unlink" id="unlink-btn"><i class="fa-solid fa-chain-broken"></i></button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
