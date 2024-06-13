@@ -56,6 +56,39 @@ require_once '../helper/connection.php';
 
 </style>
 
+<!-- Tombol untuk membuka modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="deviceModal" tabindex="-1" role="dialog" aria-labelledby="deviceModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deviceModalLabel">Set Guestfolio Device Token</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="guestfolio_sign_update.php" method="get">
+          <div class="form-group">
+            <label for="device_id">Pilih Device ID:</label>
+            <select name="id" id="device_id" class="form-control">
+              <?php
+              require_once '../helper/connection.php';
+              $query = "SELECT device_id FROM token_device";
+              $result = mysqli_query($connection, $query);
+              while ($row = mysqli_fetch_assoc($result)): ?>
+                <option value="<?= $row['device_id'] ?>"><?= $row['device_id'] ?></option>
+              <?php endwhile; ?>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Set ID</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <section class="section">
   <div class="section-header d-flex justify-content-between">
     <b><i class="fa-solid fa-fire"></i> FrontOffice <i class="fa-solid fa-folder-open"></i> Regcard Guestfolio</b>
@@ -184,8 +217,13 @@ require_once '../helper/connection.php';
                                         <?php endif; ?>
                                     </td>
                                     <td>
-                                        <?php if ((empty($row['g_signature_path'])) && ($row['at_guestfolio'])): ?>
+                                        <!-- <?php if ((empty($row['g_signature_path'])) && ($row['at_guestfolio'])): ?>
                                             <a class="btn btn-sm btn-default mb-md-0 mb-1" href="guestfolio_sign_update.php?id=<?php echo $row['id']; ?>"><i class="fa-solid fa-paper-plane fa-xl" style="color: #f82b85;"></i></a>
+                                        <?php endif; ?> -->
+                                        <?php if ((empty($row['g_signature_path'])) && ($row['at_guestfolio'])): ?>
+                                            <button type="button" class="btn btn-sm btn-default mb-md-0 mb-1" data-toggle="modal" data-target="#deviceModal" data-id="<?php echo $row['id']; ?>">
+                                                <i class="fa-solid fa-paper-plane fa-xl" style="color: #f82b85;"></i>
+                                            </button>
                                         <?php endif; ?>
                                         <?php if ($row['at_guestfolio']): ?>
                                             <a class="btn btn-sm btn-default mb-md-0 mb-1" href="<?php echo $row['at_guestfolio']; ?>" target="_blank"><i class="fa-solid fa-file-pdf fa-xl"></i></a>
@@ -258,6 +296,18 @@ require_once '../layout/_bottom.php';
             $('#filter').submit(); 
         });
     });
+</script>
+
+<script>
+$(document).ready(function(){
+    // Event yang dipicu saat modal akan ditampilkan
+    $('#deviceModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget); // Tombol yang memicu modal
+        var recipientId = button.data('id'); // Ekstrak info dari atribut data-id
+        var modal = $(this);
+        modal.find('.modal-body form').attr('action', 'guestfolio_sign_update.php?id=' + recipientId);
+    });
+});
 </script>
 
 
