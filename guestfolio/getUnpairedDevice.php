@@ -1,22 +1,12 @@
 <?php
-// Koneksi ke database
-$host = "localhost"; // atau alamat server lain
-$username = "username_db";
-$password = "password_db";
-$database = "nama_database";
-
-$conn = new mysqli($host, $username, $password, $database);
-
-// Cek koneksi
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// Koneksi ke database dan ambil data
+require_once 'helper/connection.php';
 
 // Query untuk mengambil token_id dari device yang statusnya 'unpaired'
-$sql = "SELECT token_id FROM device WHERE status = 'unpaired' LIMIT 1";
-$result = $conn->query($sql);
+$query = mysqli_query($connection, "SELECT token_id FROM token_device WHERE status = '0' LIMIT 1");
+$row = mysqli_fetch_array($query);
 
-if ($result->num_rows > 0) {
+if ($row->num_rows > 0) {
     // output data dari setiap baris
     while($row = $result->fetch_assoc()) {
         echo $row["token_id"];
