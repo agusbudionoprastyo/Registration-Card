@@ -95,7 +95,7 @@
         var deviceToken = localStorage.getItem('deviceTokenId');
 
         // Kirim token ke server menggunakan fetch API
-        fetch('../update.php', {
+        fetch('update.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
