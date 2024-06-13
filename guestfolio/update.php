@@ -6,12 +6,15 @@ require_once 'helper/connection.php';
 header('Content-Type: text/event-stream');
 header('Cache-Control: no-cache');
 
+// Ambil device_token dari POST data
+$deviceToken = $_POST['device_token'] ?? 'default_token'; // Gunakan default token jika tidak ada yang dikirim
+
 // Looping untuk mengirimkan pembaruan berkala
 while (true) {
     // Ambil data dari database
-    $query = mysqli_query($connection, "SELECT regform.*, guestfolio_token.*
+    $query = mysqli_query($connection, "SELECT *
     FROM regform
-    INNER JOIN guestfolio_token ON regform.id = guestfolio_token.device_id");
+    WHERE device_token = '$deviceToken'");
     $row = mysqli_fetch_array($query);
 
     // Kirim data ke klien

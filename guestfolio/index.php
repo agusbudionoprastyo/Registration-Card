@@ -91,6 +91,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.worker.min.js"></script>
 
     <script>
+        // Ambil token dari local storage
+        var deviceToken = localStorage.getItem('deviceTokenId');
+
+        // Kirim token ke server menggunakan fetch API
+        fetch('guestfolio/update.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: 'device_token=' + deviceToken
+        });
+
     document.getElementById('pairing-btn').addEventListener('click', function() {
         // Cek jika local storage sudah memiliki token_id
         if (!localStorage.getItem('deviceTokenId')) {
