@@ -90,7 +90,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.worker.min.js"></script>
 
     <script>
-        document.getElementById('pairing-btn').addEventListener('click', function() {
+    document.getElementById('pairing-btn').addEventListener('click', function() {
+        // Cek jika local storage sudah memiliki token_id
+        if (!localStorage.getItem('deviceTokenId')) {
+            // Jika tidak ada token_id, lakukan AJAX untuk pairing
             $.ajax({
                 url: 'getUnpairedDevice.php',
                 type: 'GET',
@@ -121,7 +124,11 @@
                     alert("Error fetching data");
                 }
             });
-        });
+        } else {
+            // Jika token_id sudah ada, beri notifikasi bahwa device sudah dipair
+            alert("Device sudah dipair dengan token ID: " + localStorage.getItem('deviceTokenId'));
+        }
+    });
     </script>
 </body>
 </html>
