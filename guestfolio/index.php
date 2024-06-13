@@ -96,9 +96,9 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
-        <button type="button" class="undoClear floating-btn-toggle" id="toggle-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        <button type="button" class="undoClear floating-btn-toggle" id="toggle-btn"><i class="fa-solid fa-ellipsis-vertical" style="color: #ff3d9b;"></i></button>
         <button type="button" class="undoClear floating-btn-pair" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
-        <button type="button" class="undoClear floating-btn-unpair" id="unpair-btn" style="display:none;"><i class="fa-solid fa-ban"></i></button>
+        <button type="button" class="undoClear floating-btn-unpair" id="unpair-btn" style="display:none;"><i class="fa-solid fa-square-minus" style="color: #ff0000;"></i></button>
         <button type="button" class="undoClear floating-btn-unlink" id="unlink-btn" style="display:none;">Unlink</button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
