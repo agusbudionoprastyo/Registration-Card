@@ -221,9 +221,9 @@ require_once '../helper/connection.php';
                                             <a class="btn btn-sm btn-default mb-md-0 mb-1" href="guestfolio_sign_update.php?id=<?php echo $row['id']; ?>"><i class="fa-solid fa-paper-plane fa-xl" style="color: #f82b85;"></i></a>
                                         <?php endif; ?> -->
                                         <?php if ((empty($row['g_signature_path'])) && ($row['at_guestfolio'])): ?>
-                                            <button type="button" class="btn btn-sm btn-default mb-md-0 mb-1" data-toggle="modal" data-target="#deviceModal" data-id="<?php echo $row['id']; ?>">
+                                            <a class="btn btn-sm btn-default mb-md-0 mb-1" data-toggle="modal" data-target="#deviceModal" data-id="<?php echo $row['id']; ?>">
                                                 <i class="fa-solid fa-paper-plane fa-xl" style="color: #f82b85;"></i>
-                                            </button>
+                                        </a>
                                         <?php endif; ?>
                                         <?php if ($row['at_guestfolio']): ?>
                                             <a class="btn btn-sm btn-default mb-md-0 mb-1" href="<?php echo $row['at_guestfolio']; ?>" target="_blank"><i class="fa-solid fa-file-pdf fa-xl"></i></a>
