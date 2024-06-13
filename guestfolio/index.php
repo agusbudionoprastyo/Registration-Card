@@ -35,6 +35,11 @@
                 max-width: 100%; /* Maksimum lebar canvas */
                 height: auto; /* Tinggi canvas disesuaikan secara otomatis */
             }
+
+            .hidden-on-load {
+                display: none;
+            }
+
             .floating-btn-toggle {
                 position: fixed;
                 top: 5px;  
@@ -95,10 +100,10 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
-        <button type="button" class="undoClear floating-btn-toggle" id="toggle-btn"><i class="fa-solid fa-toggle-on"></i></button>
-        <button type="button" class="undoClear floating-btn-pair" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
-        <button type="button" class="undoClear floating-btn-unpair" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
-        <button type="button" class="undoClear floating-btn-unlink" id="unlink-btn">Unlink</button>
+        <button type="button" class="undoClear floating-btn-toggle" id="toggle-btn"><i class="fa-solid fa-ellipsis"></i></button>
+        <button type="button" class="undoClear floating-btn-pair hidden-on-load" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <button type="button" class="undoClear floating-btn-unpair hidden-on-load" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
+        <button type="button" class="undoClear floating-btn-unlink hidden-on-load" id="unlink-btn">Unlink</button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
@@ -121,7 +126,7 @@
         var btnUnlink = document.getElementById('unlink-btn');
         
         // Toggle visibility
-        if (btnPair.style.display === 'none') {
+        if (btnPair.style.display === 'none' || btnPair.style.display === '') {
             btnPair.style.display = 'block';
             btnUnpair.style.display = 'block';
             btnUnlink.style.display = 'block';
@@ -131,7 +136,7 @@
             btnUnlink.style.display = 'none';
         }
     });
-    </script>
+</script>
     
     <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="js/signature_pad.umd.js"></script>
