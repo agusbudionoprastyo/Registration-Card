@@ -239,6 +239,37 @@ require_once '../helper/connection.php';
 require_once '../layout/_bottom.php';
 ?>
 
+<!-- Modal -->
+<div class="modal fade" id="deviceModal" tabindex="-1" role="dialog" aria-labelledby="deviceModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deviceModalLabel">Set Guestfolio Device Token</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="guestfolio_sign_update.php" method="get">
+          <div class="form-group">
+            <label for="device_id">Pilih Device :</label>
+            <select name="id" id="device_id" class="form-control">
+              <?php
+              require_once '../helper/connection.php';
+              $query = "SELECT device_name FROM token_device";
+              $result = mysqli_query($connection, $query);
+              while ($row = mysqli_fetch_assoc($result)): ?>
+                <option value="<?= $row['device_name'] ?>"><?= $row['device_name'] ?></option>
+              <?php endwhile; ?>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Set ID</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Bootstrap Datepicker JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
