@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $inputPdfFilename = __DIR__ . '/attachement_pdf/' . $pdfFile;
     $outputPdfFilename = 'guestfolio_' . $folio . '_signed.pdf';
     $outputPdfFilePath = __DIR__ . '/signed_doc/' . $outputPdfFilename;
-    $at_guestfolio = '/signed_doc/' . $outputPdfFilename;
+    $at_guestfolio = '../signed_doc/' . $outputPdfFilename;
 
     // Cek apakah direktori 'signed_doc' ada, jika tidak, buat direktori tersebut
     if (!is_dir(__DIR__ . '/signed_doc')) {
