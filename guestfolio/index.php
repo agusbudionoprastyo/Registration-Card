@@ -35,25 +35,31 @@
                 max-width: 100%; /* Maksimum lebar canvas */
                 height: auto; /* Tinggi canvas disesuaikan secara otomatis */
             }
-
-            .floating-btn-pair {
-                position: fixed; /* Membuat posisi tombol tetap dan melayang */
-                top: 5px; /* Jarak dari atas */
-                right: 20px; /* Jarak dari kanan */
-                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+            .floating-btn-toggle {
+                position: fixed;
+                top: 5px;  
+                right: 20px; /* Sesuaikan berdasarkan lebar dan margin tombol lain */
+                z-index: 1000;
             }
 
-            .floating-btn-unpair {
+            .floating-btn-pair {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
                 top: 5px; /* Jarak dari atas */
                 right: 80px; /* Jarak dari kanan */
                 z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
             }
 
-            .floating-btn-unlink {
+            .floating-btn-unpair {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
                 top: 5px; /* Jarak dari atas */
                 right: 140px; /* Jarak dari kanan */
+                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+            }
+
+            .floating-btn-unlink {
+                position: fixed; /* Membuat posisi tombol tetap dan melayang */
+                top: 5px; /* Jarak dari atas */
+                right: 200px; /* Jarak dari kanan */
                 z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
             }
 
@@ -89,9 +95,10 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
+        <button type="button" class="undoClear floating-btn-toggle" id="toggle-btn"><i class="fa-solid fa-toggle-on"></i></button>
         <button type="button" class="undoClear floating-btn-pair" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
         <button type="button" class="undoClear floating-btn-unpair" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
-        <button type="button" class="undoClear floating-btn-unlink" id="unlink-btn"><i class="fa-solid fa-chain-broken"></i></button>
+        <button type="button" class="undoClear floating-btn-unlink" id="unlink-btn">Unlink</button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
@@ -106,6 +113,25 @@
             </div>
         </div>
     </form>
+
+    <script>
+    document.getElementById('toggle-btn').addEventListener('click', function() {
+        var btnPair = document.getElementById('pairing-btn');
+        var btnUnpair = document.getElementById('unpair-btn');
+        var btnUnlink = document.getElementById('unlink-btn');
+        
+        // Toggle visibility
+        if (btnPair.style.display === 'none') {
+            btnPair.style.display = 'block';
+            btnUnpair.style.display = 'block';
+            btnUnlink.style.display = 'block';
+        } else {
+            btnPair.style.display = 'none';
+            btnUnpair.style.display = 'none';
+            btnUnlink.style.display = 'none';
+        }
+    });
+    </script>
     
     <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="js/signature_pad.umd.js"></script>
