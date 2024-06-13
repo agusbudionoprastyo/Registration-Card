@@ -1,77 +1,60 @@
-let previousID = null;
-
-// Set up EventSource for real-time updates
-const eventSource = new EventSource('../update.php');
+let eventSource = new EventSource('../update.php');
 
 eventSource.onmessage = function(event) {
     const data = JSON.parse(event.data);
 
-    // Check if id has changed
-    if (data.id && (!previousID || previousID !== data.id)) {
-        Swal.fire({
-            icon: 'info',
-            title: 'Guestfolio',
-            text: `Guestfolio ${data.folio}, nama ${data.nama} siap untuk di tandatangani!`,
-            showConfirmButton: false
-        });
-    }
+    // Tampilkan notifikasi
+    Swal.fire({
+        icon: 'info',
+        title: 'Guestfolio',
+        text: `Guestfolio ${data.folio}, nama ${data.nama} siap untuk di tandatangani!`,
+        showConfirmButton: false
+    });
 
     // Update form fields with received data
-    document.getElementById('id').value = data.id; // Ganti 'device_token' dengan 'id'
+    document.getElementById('id').value = data.id;
     document.getElementById('pdfFile').value = data.at_guestfolio;
     document.getElementById('folio').value = data.folio;
 
-
-    // Load and render PDF only if id or pdfFile has changed
-    if (!previousID || previousID !== data.id || previousPdfFile !== data.at_guestfolio) {
-        const pdfUrl = data.at_guestfolio;
-        const loadingTask = pdfjsLib.getDocument(pdfUrl);
-        loadingTask.promise.then(function(pdf) {
-            console.log('PDF loaded');
-            // Ambil halaman pertama PDF
-            pdf.getPage(1).then(function(page) {
-                console.log('Page loaded');
-                const scale = 1;
-                const viewport = page.getViewport({scale: scale});
-                // Buat canvas untuk menampilkan halaman PDF
-                const canvas = document.createElement('canvas');
-                const context = canvas.getContext('2d');
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-                // Menggambar halaman PDF ke dalam canvas
-                const renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                const renderTask = page.render(renderContext);
-                renderTask.promise.then(function() {
-                    console.log('Page rendered');
-                    // Hapus konten lama dari pdf-viewer
-                    const pdfViewer = document.getElementById('pdf-container');
-                    pdfViewer.innerHTML = '';
-                    // Menambahkan canvas ke dalam div
-                    pdfViewer.appendChild(canvas);
-                });
+    // Langsung muat dan render PDF
+    const pdfUrl = data.at_guestfolio;
+    const loadingTask = pdfjsLib.getDocument(pdfUrl);
+    loadingTask.promise.then(function(pdf) {
+        console.log('PDF loaded');
+        // Ambil halaman pertama PDF
+        pdf.getPage(1).then(function(page) {
+            console.log('Page loaded');
+            const scale = 1;
+            const viewport = page.getViewport({scale: scale});
+            // Buat canvas untuk menampilkan halaman PDF
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            // Menggambar halaman PDF ke dalam canvas
+            const renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            const renderTask = page.render(renderContext);
+            renderTask.promise.then(function() {
+                console.log('Page rendered');
+                // Hapus konten lama dari pdf-viewer
+                const pdfViewer = document.getElementById('pdf-container');
+                pdfViewer.innerHTML = '';
+                // Menambahkan canvas ke dalam div
+                pdfViewer.appendChild(canvas);
             });
-        }).catch(function(reason) {
-            // Jika gagal memuat PDF
-            console.error('Error: ' + reason);
         });
-
-        // Update the previous pdfFile
-        previousPdfFile = data.at_guestfolio;
-    }
-
-    // Update the previous device ID
-    previousID = data.id; // Ganti 'device_token' dengan 'id'
+    }).catch(function(reason) {
+        // Jika gagal memuat PDF
+        console.error('Error: ' + reason);
+    });
 };
-
 
 eventSource.onerror = function(error) {
     console.error('EventSource failed:', error);
-    // Handle the error as needed
 };
-
 
 document.getElementById('save-btn').addEventListener('click', function () {
     var id = document.getElementById('id').value; // Ganti 'device_token' dengan 'id'
