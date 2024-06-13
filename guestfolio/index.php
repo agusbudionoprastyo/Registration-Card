@@ -76,8 +76,8 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
-        <button type="button" class="undoClear floating-btn" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
-        <button type="button" class="undoClear floating-btn" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
+        <button type="button" class="floating-btn" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <button type="button" class="floating-btn" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
