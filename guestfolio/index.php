@@ -72,9 +72,9 @@
             <canvas></canvas>
             <div class="input-group">
                 <div class="input-wrapper">
+                    <button type="button" class="undoClear" id="pairing-btn" class="btn btn-primary">Pair</button>
                     <button type="button" class="undoClear" data-action="clear"><i class="fa-solid fa-eraser"></i></button>
                     <button type="button" data-action="undo"><i class="fa-solid fa-rotate-left"></i></button>
-                    <button type="button" id="pairing-btn" class="btn btn-primary">Pair</button>
                     <button type="button" id="save-btn" class="cyan">SUBMIT</button>
                 </div>
             </div>
