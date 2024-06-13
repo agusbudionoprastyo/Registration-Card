@@ -123,18 +123,6 @@ function sendData(id, signatureData, pdfFile, folio) { // Ganti 'device_token' d
     xhr.send(formData);
 }
 
- // Ambil token dari local storage
- var deviceToken = localStorage.getItem('deviceTokenId');
-
- // Kirim token ke server menggunakan fetch API
- fetch('../update.php', {
-     method: 'POST',
-     headers: {
-         'Content-Type': 'application/x-www-form-urlencoded',
-     },
-     body: 'device_token=' + deviceToken
- });
-
 document.getElementById('pairing-btn').addEventListener('click', function() {
  // Cek jika local storage sudah memiliki token_id
  if (!localStorage.getItem('deviceTokenId')) {
