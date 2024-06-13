@@ -35,6 +35,15 @@
                 max-width: 100%; /* Maksimum lebar canvas */
                 height: auto; /* Tinggi canvas disesuaikan secara otomatis */
             }
+
+
+            .floating-btn {
+                position: fixed; /* Membuat posisi tombol tetap dan melayang */
+                bottom: 20px; /* Jarak dari bawah */
+                right: 20px; /* Jarak dari kanan */
+                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+            }
+
         </style>
     <script>
 
@@ -67,13 +76,15 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
+        <button type="button" class="undoClear floating-btn" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <button type="button" class="undoClear floating-btn" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
             <div class="input-group">
                 <div class="input-wrapper">
-                    <button type="button" class="undoClear" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
-                    <button type="button" class="undoClear" id="unpair-btn"><i class="fa-solid fa-ban"></i></button>
+                    <!-- <button type="button" class="undoClear" id="pairing-btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    <button type="button" class="undoClear" id="unpair-btn"><i class="fa-solid fa-ban"></i></button> -->
                     <button type="button" class="undoClear" data-action="clear"><i class="fa-solid fa-eraser"></i></button>
                     <button type="button" data-action="undo"><i class="fa-solid fa-rotate-left"></i></button>
                     <button type="button" id="save-btn" class="cyan">SUBMIT</button>
