@@ -68,12 +68,12 @@
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
         <div id="signature-pad">
-            <label><h3>SIGNATURE</h3></label>
+                <label><h3>SIGNATURE</h3></label>
+            <button type="button" class="undoClear" id="pairing-btn" class="btn btn-primary">PAIR</button>
+            <button type="button" class="undoClear" id="unpair-btn" class="btn btn-danger">UNPAIR</button>
             <canvas></canvas>
             <div class="input-group">
                 <div class="input-wrapper">
-                    <button type="button" class="undoClear" id="pairing-btn" class="btn btn-primary"><i class="fa-solid fa-arrows-rotate"></i></button>
-                    <button type="button" class="undoClear" id="unpair-btn" class="btn btn-danger">UNPAIR</button>
                     <button type="button" class="undoClear" data-action="clear"><i class="fa-solid fa-eraser"></i></button>
                     <button type="button" data-action="undo"><i class="fa-solid fa-rotate-left"></i></button>
                     <button type="button" id="save-btn" class="cyan">SUBMIT</button>
@@ -164,7 +164,7 @@
                     Swal.fire({
                         icon: 'info',
                         title: 'Unpaired',
-                        text: 'Device telah di-unpair dan status diperbarui.',
+                        text: 'Unpairing device success, token removed',
                         showConfirmButton: false
                     });
                 },
@@ -177,7 +177,7 @@
             Swal.fire({
                 icon: 'error',
                 title: 'Error',
-                text: 'Tidak ada token ID yang tersimpan.',
+                text: 'No token ID saved',
                 showConfirmButton: false
             });
         }
