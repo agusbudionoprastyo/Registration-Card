@@ -156,8 +156,8 @@
             autocapitalize: 'off',
             autocorrect: 'off'
         },
-        showCancelButton: true,
-        confirmButtonText: 'Submit',
+        showCancelButton: false,
+        showConfirmButton: false,
         showLoaderOnConfirm: true,
         preConfirm: (password) => {
             if (password === "Dafam@188") {
