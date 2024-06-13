@@ -2,57 +2,43 @@
 session_start();
 require_once '../helper/connection.php';
 
-// Fungsi untuk memeriksa apakah tabel 'guestfolio_token' kosong
-function isguestfolio_tokenTableEmpty($connection) {
-    $result = mysqli_query($connection, "SELECT COUNT(*) as count FROM guestfolio_token");
-    $row = mysqli_fetch_assoc($result);
-    return $row['count'] == 0;
-}
+$tokenId = isset($_GET['token_id']) ? $_GET['token_id'] : null;
+$guestfolioId = isset($_GET['guestfolio_id']) ? $_GET['guestfolio_id'] : null;
 
-// Fungsi untuk menambahkan data ke tabel 'guestfolio_token'
-function addDataToguestfolio_tokenTable($connection, $id) {
-    $id = mysqli_real_escape_string($connection, $id);
-    $query = "INSERT INTO guestfolio_token (device_id) VALUES ('$id')";
-    return mysqli_query($connection, $query);
-}
-
-// Fungsi untuk menghapus semua entri dari tabel 'guestfolio_token'
-function truncateguestfolio_tokenTable($connection) {
-    $query = "TRUNCATE TABLE guestfolio_token";
-    return mysqli_query($connection, $query);
-}
-
-$id = isset($_GET['id']) ? $_GET['id'] : null;
-
-if ($id === null || !is_numeric($id)) {
+if ($tokenId === null || $guestfolioId === null || !is_numeric($tokenId) || !is_numeric($guestfolioId)) {
     $_SESSION['info'] = [
         'status' => 'failed',
-        'message' => 'Invalid ID'
+        'message' => 'ID tidak valid atau tidak lengkap'
     ];
     header('Location: regform.php');
     exit;
 }
 
-if (!isguestfolio_tokenTableEmpty($connection)) {
-    // Jika tabel tidak kosong, hapus semua entri
-    if (truncateguestfolio_tokenTable($connection)) {
-        echo "'guestfolio_token' UnSynch.";
-    } else {
-        echo "Gagal mengosongkan tabel 'guestfolio_token'.";
-        exit;
-    }
-}
+// Query untuk update
+$query = "UPDATE regform SET gf_device_token = ? WHERE id = ?";
 
-// Tambahkan data ke tabel 'guestfolio_token'
-if (addDataToguestfolio_tokenTable($connection, $id)) {
-    $_SESSION['info'] = [
-        'status' => 'success',
-        'message' => 'Guestfolio terkirim ke tablet'
-    ];
+// Persiapan statement untuk keamanan
+if ($stmt = mysqli_prepare($connection, $query)) {
+    mysqli_stmt_bind_param($stmt, "ii", $tokenId, $guestfolioId);
+    mysqli_stmt_execute($stmt);
+
+    if (mysqli_stmt_affected_rows($stmt) > 0) {
+        $_SESSION['info'] = [
+            'status' => 'success',
+            'message' => 'Token perangkat berhasil diperbarui.'
+        ];
+    } else {
+        $_SESSION['info'] = [
+            'status' => 'failed',
+            'message' => 'Tidak ada perubahan data atau update gagal.'
+        ];
+    }
+
+    mysqli_stmt_close($stmt);
 } else {
     $_SESSION['info'] = [
         'status' => 'failed',
-        'message' => 'Gagal menambahkan Guestfolio ke tablet'
+        'message' => 'Kesalahan saat menyiapkan query: ' . mysqli_error($connection)
     ];
 }
 
