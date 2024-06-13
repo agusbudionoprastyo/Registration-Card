@@ -73,7 +73,7 @@
             <div class="input-group">
                 <div class="input-wrapper">
                     <button type="button" class="undoClear" id="pairing-btn" class="btn btn-primary"><i class="fa-solid fa-arrows-rotate"></i></button>
-                    <button type="button" class="undoClear" id="unpair-btn" class="btn btn-danger"><i class="fa-solid fa-rotate-left"></i></button>
+                    <button type="button" class="undoClear" id="unpair-btn" class="btn btn-danger">UNPAIR</button>
                     <button type="button" class="undoClear" data-action="clear"><i class="fa-solid fa-eraser"></i></button>
                     <button type="button" data-action="undo"><i class="fa-solid fa-rotate-left"></i></button>
                     <button type="button" id="save-btn" class="cyan">SUBMIT</button>
@@ -114,7 +114,7 @@
                         $.ajax({
                             url: 'updateDeviceStatus.php',
                             type: 'POST',
-                            data: { token_id: data.token_id, status: '0'},
+                            data: { token_id: data.token_id, status: '1'},
                             success: function(updateResponse) {
                                 console.log("Status updated successfully");
                             },
