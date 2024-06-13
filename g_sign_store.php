@@ -7,7 +7,7 @@ use setasign\Fpdi\Tcpdf\Fpdi;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $signatureData = $_POST['signature'];
-    $device_id = $_POST['device_id'];
+    $id = $_POST['id'];
     $pdfFile = $_POST['pdfFile'];
     $folio = $_POST['folio'];
 
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             throw new Exception("Prepare failed: " . $connection->error);
         }
 
-        $stmt->bind_param("sss", $signatureFilename, $at_guestfolio, $device_id);
+        $stmt->bind_param("sss", $signatureFilename, $at_guestfolio, $id);
 
         // Eksekusi pernyataan SQL
         if (!$stmt->execute()) {
