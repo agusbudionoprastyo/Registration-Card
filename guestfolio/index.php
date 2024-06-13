@@ -72,7 +72,7 @@
             <canvas></canvas>
             <div class="input-group">
                 <div class="input-wrapper">
-                    <button type="button" class="undoClear" id="pairing-btn" class="btn btn-primary">Pair</button>
+                    <button type="button" class="undoClear" id="pairing-btn" class="btn btn-primary"><i class="fa-solid fa-arrows-rotate"></i></button>
                     <button type="button" class="undoClear" data-action="clear"><i class="fa-solid fa-eraser"></i></button>
                     <button type="button" data-action="undo"><i class="fa-solid fa-rotate-left"></i></button>
                     <button type="button" id="save-btn" class="cyan">SUBMIT</button>
@@ -104,10 +104,10 @@
                         localStorage.setItem('deviceTokenId', data.token_id);
                         // alert("Token ID telah disimpan: " + data.token_id);
                         Swal.fire({
-                                    icon: 'success',
-                                    title: 'Oops...',
-                                    text: 'Token ID telah disimpan: ' + data.token_id,
-                                    showConfirmButton: false
+                            icon: 'success',
+                            title: 'Oops...',
+                            text: 'Token ID telah disimpan: ' + data.token_id,
+                            showConfirmButton: false
                         });
                         // Kirim permintaan untuk update status
                         $.ajax({
@@ -131,7 +131,13 @@
             });
         } else {
             // Jika token_id sudah ada, beri notifikasi bahwa device sudah dipair
-            alert("Device sudah dipair dengan token ID: " + localStorage.getItem('deviceTokenId'));
+            // alert("Device sudah dipair dengan token ID: " + localStorage.getItem('deviceTokenId'));
+            Swal.fire({
+                icon: 'warning',
+                title: 'Oops...',
+                text: 'Device already pair with token ID: ' + localStorage.getItem('deviceTokenId'),
+                showConfirmButton: false
+            });
         }
     });
     </script>
