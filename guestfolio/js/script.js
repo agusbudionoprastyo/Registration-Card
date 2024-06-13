@@ -1,3 +1,38 @@
+document.addEventListener('DOMContentLoaded', function() {
+    var deviceToken = localStorage.getItem('deviceTokenId') || 'default_token';
+    let eventSource = new EventSource(`../update.php?device_token=${deviceToken}`);
+
+    let lastId = null; // Variabel untuk menyimpan id terakhir yang diterima
+
+    eventSource.onmessage = function(event) {
+        const data = JSON.parse(event.data);
+
+        // Tampilkan notifikasi
+        Swal.fire({
+            icon: 'info',
+            title: 'Guestfolio',
+            text: `Guestfolio ${data.folio}, nama ${data.nama} siap untuk di tandatangani!`,
+            showConfirmButton: false
+        });
+
+        // Update form fields with received data
+        document.getElementById('id').value = data.id;
+        document.getElementById('pdfFile').value = data.at_guestfolio;
+        document.getElementById('folio').value = data.folio;
+
+        // Periksa jika data.id sama dengan id terakhir yang diterima
+        if (data.id === lastId) {
+            eventSource.close(); // Tutup koneksi EventSource
+            console.log(`EventSource ditutup karena data.id (${data.id}) sama dengan id sebelumnya`);
+        } else {
+            lastId = data.id; // Perbarui lastId dengan id baru
+        }
+    };
+
+    eventSource.onerror = function(error) {
+        console.error('EventSource failed:', error);
+    };
+});
 // let eventSource = new EventSource('../update.php');
 
 // eventSource.onmessage = function(event) {
@@ -237,29 +272,3 @@
 //  });
 // }
 // });
-
-document.addEventListener('DOMContentLoaded', function() {
-    var deviceToken = localStorage.getItem('deviceTokenId') || 'default_token';
-    let eventSource = new EventSource(`../update.php?device_token=${deviceToken}`);
-
-    eventSource.onmessage = function(event) {
-        const data = JSON.parse(event.data);
-
-        // Tampilkan notifikasi
-        Swal.fire({
-            icon: 'info',
-            title: 'Guestfolio',
-            text: `Guestfolio ${data.folio}, nama ${data.nama} siap untuk di tandatangani!`,
-            showConfirmButton: false
-        });
-
-        // Update form fields with received data
-        document.getElementById('id').value = data.id;
-        document.getElementById('pdfFile').value = data.at_guestfolio;
-        document.getElementById('folio').value = data.folio;
-    };
-
-    eventSource.onerror = function(error) {
-        console.error('EventSource failed:', error);
-    };
-});
