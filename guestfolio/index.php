@@ -63,7 +63,7 @@
 </head>
 <body>
     <form id="imageForm"> 
-        <input type="hidden" id="device_id"/>
+        <input type="hidden" id="device_token"/>
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>

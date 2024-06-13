@@ -1,4 +1,4 @@
-let previousDeviceId = null;
+let previousDeviceToken = null;
 
 // Set up EventSource for real-time updates
 const eventSource = new EventSource('../update.php');
@@ -6,8 +6,8 @@ const eventSource = new EventSource('../update.php');
 eventSource.onmessage = function(event) {
     const data = JSON.parse(event.data);
 
-    // Check if device_id has changed
-    if (data.device_id && (!previousDeviceId || previousDeviceId !== data.device_id)) {
+    // Check if device_token has changed
+    if (data.device_token && (!previousDeviceToken || previousDeviceToken !== data.device_token)) {
         Swal.fire({
             icon: 'info',
             title: 'Guestfolio',
@@ -17,13 +17,13 @@ eventSource.onmessage = function(event) {
     }
 
     // Update form fields with received data
-    document.getElementById('device_id').value = data.device_id;
+    document.getElementById('device_token').value = data.device_token;
     document.getElementById('pdfFile').value = data.at_guestfolio;
     document.getElementById('folio').value = data.folio;
 
 
-    // Load and render PDF only if device_id or pdfFile has changed
-    if (!previousDeviceId || previousDeviceId !== data.device_id || previousPdfFile !== data.at_guestfolio) {
+    // Load and render PDF only if device_token or pdfFile has changed
+    if (!previousDeviceToken || previousDeviceToken !== data.device_token || previousPdfFile !== data.at_guestfolio) {
         const pdfUrl = data.at_guestfolio;
         const loadingTask = pdfjsLib.getDocument(pdfUrl);
         loadingTask.promise.then(function(pdf) {
@@ -63,7 +63,7 @@ eventSource.onmessage = function(event) {
     }
 
     // Update the previous device ID
-    previousDeviceId = data.device_id;
+    previousDeviceToken = data.device_token;
 };
 
 
@@ -74,7 +74,7 @@ eventSource.onerror = function(error) {
 
 
 document.getElementById('save-btn').addEventListener('click', function () {
-    var device_id = document.getElementById('device_id').value;
+    var device_token = document.getElementById('device_token').value;
     var pdfFile = document.getElementById('pdfFile').value;
     var folio = document.getElementById('folio').value;
 
@@ -91,17 +91,17 @@ document.getElementById('save-btn').addEventListener('click', function () {
         var signatureData = signaturePad.toDataURL();
         
         // Mengirim data ke server
-        sendData(device_id, signatureData, pdfFile, folio);
+        sendData(device_token, signatureData, pdfFile, folio);
     }
 });
 
-function sendData(device_id, signatureData, pdfFile, folio) {
+function sendData(device_token, signatureData, pdfFile, folio) {
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://card.dafam.cloud/g_sign_store.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     
     // Format the data to be sent
-    var params = `device_id=${encodeURIComponent(device_id)}&signatureData=${encodeURIComponent(signatureData)}&pdfFile=${encodeURIComponent(pdfFile)}&folio=${encodeURIComponent(folio)}`;
+    var params = `device_token=${encodeURIComponent(device_token)}&signatureData=${encodeURIComponent(signatureData)}&pdfFile=${encodeURIComponent(pdfFile)}&folio=${encodeURIComponent(folio)}`;
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -131,7 +131,7 @@ function sendData(device_id, signatureData, pdfFile, folio) {
     };
     
     // Membuat string data yang akan dikirim
-    var formData =  '&device_id=' + encodeURIComponent(device_id) + 
+    var formData =  '&device_token=' + encodeURIComponent(device_token) + 
                     '&signature=' + encodeURIComponent(signatureData) +
                     '&pdfFile=' + encodeURIComponent(pdfFile) + 
                     '&folio=' + encodeURIComponent(folio);
