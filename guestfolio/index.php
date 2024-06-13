@@ -79,6 +79,7 @@
             </div>
         </div>
     </form>
+    <button type="button" id="pairing-btn" class="btn btn-primary">Pair Device</button>
     <script src="sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="js/signature_pad.umd.js"></script>
     <script src="js/app.js"></script>
@@ -86,5 +87,22 @@
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.worker.min.js"></script>
+
+    <script>
+    document.getElementById('pairing-btn').addEventListener('click', function() {
+        $.ajax({
+            url: 'getUnpairedDevice.php',
+            type: 'GET',
+            success: function(response) {
+                // Menyimpan token_id ke local storage
+                localStorage.setItem('deviceTokenId', response);
+                alert("Token ID telah disimpan: " + response);
+            },
+            error: function() {
+                alert("Error fetching data");
+            }
+        });
+    });
+    </script>
 </body>
 </html>
