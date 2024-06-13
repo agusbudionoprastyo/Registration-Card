@@ -14,7 +14,7 @@ while (true) {
     // Ambil data dari database
     $query = mysqli_query($connection, "SELECT *
     FROM regform
-    WHERE device_token = '$deviceToken'");
+    WHERE gf_device_token = '$deviceToken'");
     $row = mysqli_fetch_array($query);
 
     // Kirim data ke klien

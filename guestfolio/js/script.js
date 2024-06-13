@@ -17,7 +17,7 @@ eventSource.onmessage = function(event) {
     }
 
     // Update form fields with received data
-    document.getElementById('device_token').value = data.device_token;
+    document.getElementById('id').value = data.id; // Ganti 'device_token' dengan 'id'
     document.getElementById('pdfFile').value = data.at_guestfolio;
     document.getElementById('folio').value = data.folio;
 
@@ -63,7 +63,7 @@ eventSource.onmessage = function(event) {
     }
 
     // Update the previous device ID
-    previousID = data.device_token;
+    previousID = data.id; // Ganti 'device_token' dengan 'id'
 };
 
 
@@ -74,7 +74,7 @@ eventSource.onerror = function(error) {
 
 
 document.getElementById('save-btn').addEventListener('click', function () {
-    var device_token = document.getElementById('device_token').value;
+    var id = document.getElementById('id').value; // Ganti 'device_token' dengan 'id'
     var pdfFile = document.getElementById('pdfFile').value;
     var folio = document.getElementById('folio').value;
 
@@ -91,17 +91,17 @@ document.getElementById('save-btn').addEventListener('click', function () {
         var signatureData = signaturePad.toDataURL();
         
         // Mengirim data ke server
-        sendData(device_token, signatureData, pdfFile, folio);
+        sendData(id, signatureData, pdfFile, folio); // Ganti 'device_token' dengan 'id'
     }
 });
 
-function sendData(device_token, signatureData, pdfFile, folio) {
+function sendData(id, signatureData, pdfFile, folio) { // Ganti 'device_token' dengan 'id'
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://card.dafam.cloud/g_sign_store.php', true);
     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     
     // Format the data to be sent
-    var params = `device_token=${encodeURIComponent(device_token)}&signatureData=${encodeURIComponent(signatureData)}&pdfFile=${encodeURIComponent(pdfFile)}&folio=${encodeURIComponent(folio)}`;
+    var params = `id=${encodeURIComponent(id)}&signatureData=${encodeURIComponent(signatureData)}&pdfFile=${encodeURIComponent(pdfFile)}&folio=${encodeURIComponent(folio)}`; // Ganti 'device_token' dengan 'id'
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
@@ -131,7 +131,7 @@ function sendData(device_token, signatureData, pdfFile, folio) {
     };
     
     // Membuat string data yang akan dikirim
-    var formData =  '&device_token=' + encodeURIComponent(device_token) + 
+    var formData =  '&id=' + encodeURIComponent(id) +  // Ganti 'device_token' dengan 'id'
                     '&signature=' + encodeURIComponent(signatureData) +
                     '&pdfFile=' + encodeURIComponent(pdfFile) + 
                     '&folio=' + encodeURIComponent(folio);
