@@ -73,6 +73,7 @@
             <div class="input-group">
                 <div class="input-wrapper">
                     <button type="button" class="undoClear" id="pairing-btn" class="btn btn-primary"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    <button type="button" class="undoClear" id="unpair-btn" class="btn btn-danger"><i class="fa-solid fa-rotate-left"></i></button>
                     <button type="button" class="undoClear" data-action="clear"><i class="fa-solid fa-eraser"></i></button>
                     <button type="button" data-action="undo"><i class="fa-solid fa-rotate-left"></i></button>
                     <button type="button" id="save-btn" class="cyan">SUBMIT</button>
@@ -113,7 +114,7 @@
                         $.ajax({
                             url: 'updateDeviceStatus.php',
                             type: 'POST',
-                            data: { token_id: data.token_id },
+                            data: { token_id: data.token_id, status: '0'},
                             success: function(updateResponse) {
                                 console.log("Status updated successfully");
                             },
@@ -122,7 +123,13 @@
                             }
                         });
                     } else {
-                        alert("Error: " + data.error);
+                        // alert("Error: " + data.error);
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: 'Error : ' + data.error,
+                            showConfirmButton: false
+                        });
                     }
                 },
                 error: function() {
@@ -136,6 +143,41 @@
                 icon: 'warning',
                 title: 'Oops...',
                 text: 'Device already pair with token ID: ' + localStorage.getItem('deviceTokenId'),
+                showConfirmButton: false
+            });
+        }
+    });
+
+    document.getElementById('unpair-btn').addEventListener('click', function() {
+        var tokenId = localStorage.getItem('deviceTokenId');
+        if (tokenId) {
+            // Mengirim permintaan ke server untuk update status
+            $.ajax({
+                url: 'updateDeviceStatus.php',
+                type: 'POST',
+                data: { token_id: tokenId, status: '0' }, // Menambahkan status 'unpaired'
+                success: function(response) {
+                    console.log("Status updated successfully");
+                    // Menghapus token_id dari local storage setelah berhasil update status
+                    localStorage.removeItem('deviceTokenId');
+                    // Menampilkan notifikasi bahwa device telah di-unpair
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Unpaired',
+                        text: 'Device telah di-unpair dan status diperbarui.',
+                        showConfirmButton: false
+                    });
+                },
+                error: function() {
+                    console.error("Failed to update status");
+                }
+            });
+        } else {
+            // Menampilkan notifikasi jika tidak ada token ID
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Tidak ada token ID yang tersimpan.',
                 showConfirmButton: false
             });
         }
