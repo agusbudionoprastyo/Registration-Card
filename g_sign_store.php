@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdfFile = $_POST['pdfFile'];
     $folio = $_POST['folio'];
 
-
     // Dekode data tanda tangan dari base64 menjadi gambar
     $decodedSignature = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $signatureData));
     $signatureFilename = 'signature_' . uniqid() . '.png';
@@ -48,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         // Prepare the SQL statement for updating the table regform
-        $stmt = $connection->prepare("UPDATE regform SET g_signature_path = ?, at_guestfolio = ? WHERE id = ?");
+        $stmt = $connection->prepare("UPDATE regform SET g_signature_path = ?, at_guestfolio = ?, gf_device_token = NULL WHERE id = ?");
         if ($stmt === false) {
             throw new Exception("Prepare failed: " . $connection->error);
         }
@@ -60,35 +59,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             throw new Exception("Gagal menyimpan data: " . $stmt->error);
         }
 
-        // Hapus semua baris dari tabel device
-        $truncateStmt = $connection->prepare("TRUNCATE TABLE guestfolio_token");
-        if ($truncateStmt === false) {
-            throw new Exception("Prepare failed: " . $connection->error);
-        }
-
-        // Eksekusi pernyataan SQL
-        if (!$truncateStmt->execute()) {
-            throw new Exception("Gagal mengosongkan tabel: " . $truncateStmt->error);
-        }
-
         // Komit transaksi
         $connection->commit();
 
         http_response_code(200);
-        echo "Data berhasil disimpan dan tabel dihapus.";
+        echo "Data berhasil disimpan.";
     } catch (Exception $e) {
         // Rollback transaksi jika terjadi kesalahan
         $connection->rollback();
         http_response_code(500);
-        echo "Gagal menyimpan data atau menghapus tabel: " . $e->getMessage();
+        echo "Gagal menyimpan data: " . $e->getMessage();
     }
 
     // Menutup statement dan koneksi
     if (isset($stmt)) {
         $stmt->close();
-    }
-    if (isset($truncateStmt)) {
-        $truncateStmt->close();
     }
     $connection->close();
 } else {
