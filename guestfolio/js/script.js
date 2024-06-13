@@ -20,6 +20,41 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('pdfFile').value = data.at_guestfolio;
         document.getElementById('folio').value = data.folio;
 
+        // Langsung muat dan render PDF
+        const pdfUrl = data.at_guestfolio;
+        const loadingTask = pdfjsLib.getDocument(pdfUrl);
+        loadingTask.promise.then(function(pdf) {
+            console.log('PDF loaded');
+            // Ambil halaman pertama PDF
+            pdf.getPage(1).then(function(page) {
+                console.log('Page loaded');
+                const scale = 1;
+                const viewport = page.getViewport({scale: scale});
+                // Buat canvas untuk menampilkan halaman PDF
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                // Menggambar halaman PDF ke dalam canvas
+                const renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                const renderTask = page.render(renderContext);
+                renderTask.promise.then(function() {
+                    console.log('Page rendered');
+                    // Hapus konten lama dari pdf-viewer
+                    const pdfViewer = document.getElementById('pdf-container');
+                    pdfViewer.innerHTML = '';
+                    // Menambahkan canvas ke dalam div
+                    pdfViewer.appendChild(canvas);
+                });
+            });
+        }).catch(function(reason) {
+            // Jika gagal memuat PDF
+            console.error('Error: ' + reason);
+        });
+
         // Periksa jika data.id sama dengan id terakhir yang diterima
         if (data.id === lastId) {
             eventSource.close(); // Tutup koneksi EventSource
