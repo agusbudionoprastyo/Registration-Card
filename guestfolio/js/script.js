@@ -1,4 +1,4 @@
-let previousDeviceToken = null;
+let previousID = null;
 
 // Set up EventSource for real-time updates
 const eventSource = new EventSource('../update.php');
@@ -6,8 +6,8 @@ const eventSource = new EventSource('../update.php');
 eventSource.onmessage = function(event) {
     const data = JSON.parse(event.data);
 
-    // Check if device_token has changed
-    if (data.device_token && (!previousDeviceToken || previousDeviceToken !== data.device_token)) {
+    // Check if id has changed
+    if (data.id && (!previousID || previousID !== data.id)) {
         Swal.fire({
             icon: 'info',
             title: 'Guestfolio',
@@ -22,8 +22,8 @@ eventSource.onmessage = function(event) {
     document.getElementById('folio').value = data.folio;
 
 
-    // Load and render PDF only if device_token or pdfFile has changed
-    if (!previousDeviceToken || previousDeviceToken !== data.device_token || previousPdfFile !== data.at_guestfolio) {
+    // Load and render PDF only if id or pdfFile has changed
+    if (!previousID || previousID !== data.id || previousPdfFile !== data.at_guestfolio) {
         const pdfUrl = data.at_guestfolio;
         const loadingTask = pdfjsLib.getDocument(pdfUrl);
         loadingTask.promise.then(function(pdf) {
@@ -63,7 +63,7 @@ eventSource.onmessage = function(event) {
     }
 
     // Update the previous device ID
-    previousDeviceToken = data.device_token;
+    previousID = data.device_token;
 };
 
 
