@@ -298,7 +298,7 @@ require_once '../layout/_bottom.php';
     });
 </script>
 
-<script>
+<!-- <script>
 $(document).ready(function(){
     // Event yang dipicu saat modal akan ditampilkan
     $('#deviceModal').on('show.bs.modal', function (event) {
@@ -308,7 +308,7 @@ $(document).ready(function(){
         modal.find('.modal-body form').attr('action', 'guestfolio_sign_update.php?id=' + recipientId);
     });
 });
-</script>
+</script> -->
 
 
 <!-- Page Specific JS File -->
