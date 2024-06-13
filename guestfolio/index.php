@@ -89,20 +89,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.worker.min.js"></script>
 
     <script>
-    document.getElementById('pairing-btn').addEventListener('click', function() {
-        $.ajax({
-            url: 'getUnpairedDevice.php',
-            type: 'GET',
-            success: function(response) {
+document.getElementById('pairing-btn').addEventListener('click', function() {
+    $.ajax({
+        url: 'getUnpairedDevice.php',
+        type: 'GET',
+        success: function(response) {
+            var data = JSON.parse(response); // Parse JSON response
+            if (!data.error) {
                 // Menyimpan token_id ke local storage
-                localStorage.setItem('deviceTokenId', response);
-                alert("Token ID telah disimpan: " + response);
-            },
-            error: function() {
-                alert("Error fetching data");
+                localStorage.setItem('deviceTokenId', data.token_id);
+                alert("Token ID telah disimpan: " + data.token_id);
+
+                // Kirim permintaan untuk update status
+                $.ajax({
+                    url: 'updateDeviceStatus.php',
+                    type: 'POST',
+                    data: { token_id: data.token_id },
+                    success: function(updateResponse) {
+                        console.log("Status updated successfully");
+                    },
+                    error: function() {
+                        console.error("Failed to update status");
+                    }
+                });
+            } else {
+                alert("Error: " + data.error);
             }
-        });
+        },
+        error: function() {
+            alert("Error fetching data");
+        }
     });
+});
     </script>
 </body>
 </html>
