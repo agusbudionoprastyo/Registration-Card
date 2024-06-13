@@ -63,9 +63,9 @@
 </head>
 <body>
     <form id="imageForm"> 
-        <input type="hidden" id="id"/>
-        <input type="hidden" id="pdfFile"/>
-        <input type="hidden" id="folio"/>
+        <input type="text" id="id"/>
+        <input type="text" id="pdfFile"/>
+        <input type="text" id="folio"/>
         <div id="pdf-container"></div>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
