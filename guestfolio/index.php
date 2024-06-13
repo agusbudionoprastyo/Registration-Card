@@ -102,8 +102,13 @@
                     if (!data.error) {
                         // Menyimpan token_id ke local storage
                         localStorage.setItem('deviceTokenId', data.token_id);
-                        alert("Token ID telah disimpan: " + data.token_id);
-
+                        // alert("Token ID telah disimpan: " + data.token_id);
+                        Swal.fire({
+                                    icon: 'success',
+                                    title: 'Oops...',
+                                    text: 'Token ID telah disimpan: ' + data.token_id,
+                                    showConfirmButton: false
+                        });
                         // Kirim permintaan untuk update status
                         $.ajax({
                             url: 'updateDeviceStatus.php',
