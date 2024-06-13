@@ -36,10 +36,6 @@
                 height: auto; /* Tinggi canvas disesuaikan secara otomatis */
             }
 
-            .hidden-on-load {
-                display: none;
-            }
-
             .floating-btn-toggle {
                 position: fixed;
                 top: 5px;  

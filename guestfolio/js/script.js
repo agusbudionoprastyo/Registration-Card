@@ -205,7 +205,7 @@ if (!tokenId) {
  });
 } else {
  Swal.fire({
-     title: 'Enter your password',
+     title: 'Password',
      input: 'password',
      inputAttributes: {
          autocapitalize: 'off',
