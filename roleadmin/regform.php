@@ -244,7 +244,7 @@ require_once '../layout/_bottom.php';
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="deviceModalLabel">Set Guestfolio Device Token</h5>
+        <h5 class="modal-title" id="deviceModalLabel">Select Devices</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -252,18 +252,18 @@ require_once '../layout/_bottom.php';
       <div class="modal-body">
         <form action="guestfolio_sign_update.php" method="get">
           <div class="form-group">
-            <label for="device_id">Pilih Device :</label>
+            <label for="device_id"><i>Pilih device untuk tandatangan dokumen</i></label>
             <select name="id" id="device_id" class="form-control">
               <?php
               require_once '../helper/connection.php';
               $query = "SELECT device_name FROM token_device";
               $result = mysqli_query($connection, $query);
               while ($row = mysqli_fetch_assoc($result)): ?>
-                <option value="<?= $row['device_name'] ?>"><?= $row['device_name'] ?></option>
+                <option value="<?= $row['token_id'] ?>"><?= $row['device_name'] ?></option>
               <?php endwhile; ?>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary">Set ID</button>
+          <button type="submit" class="btn btn-primary">PILIH</button>
         </form>
       </div>
     </div>
