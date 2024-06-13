@@ -38,21 +38,21 @@
 
             .floating-btn-pair {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
-                top: 20px; /* Jarak dari atas */
+                top: 5px; /* Jarak dari atas */
                 right: 20px; /* Jarak dari kanan */
                 z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
             }
 
             .floating-btn-unpair {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
-                top: 20px; /* Jarak dari atas */
+                top: 5px; /* Jarak dari atas */
                 right: 80px; /* Jarak dari kanan */
                 z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
             }
 
             .floating-btn-unlink {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
-                top: 20px; /* Jarak dari atas */
+                top: 5px; /* Jarak dari atas */
                 right: 140px; /* Jarak dari kanan */
                 z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
             }
