@@ -56,39 +56,6 @@ require_once '../helper/connection.php';
 
 </style>
 
-<!-- Tombol untuk membuka modal -->
-
-<!-- Modal -->
-<div class="modal fade" id="deviceModal" tabindex="-1" role="dialog" aria-labelledby="deviceModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="deviceModalLabel">Set Guestfolio Device Token</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="guestfolio_sign_update.php" method="get">
-          <div class="form-group">
-            <label for="device_id">Pilih Device ID:</label>
-            <select name="id" id="device_id" class="form-control">
-              <?php
-              require_once '../helper/connection.php';
-              $query = "SELECT device_id FROM token_device";
-              $result = mysqli_query($connection, $query);
-              while ($row = mysqli_fetch_assoc($result)): ?>
-                <option value="<?= $row['device_id'] ?>"><?= $row['device_id'] ?></option>
-              <?php endwhile; ?>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary">Set ID</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
 <section class="section">
   <div class="section-header d-flex justify-content-between">
     <b><i class="fa-solid fa-fire"></i> FrontOffice <i class="fa-solid fa-folder-open"></i> Regcard Guestfolio</b>
