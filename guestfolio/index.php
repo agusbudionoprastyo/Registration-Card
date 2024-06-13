@@ -149,20 +149,28 @@
     });
 
     document.getElementById('unpair-btn').addEventListener('click', function() {
-    Swal.fire({
-        title: 'Enter your password',
-        input: 'password',
-        inputAttributes: {
-            autocapitalize: 'off',
-            autocorrect: 'off'
-        },
-        showCancelButton: false,
-        showConfirmButton: false,
-        showLoaderOnConfirm: true,
-        preConfirm: (password) => {
-            if (password === "Dafam@188") {
-                var tokenId = localStorage.getItem('deviceTokenId');
-                if (tokenId) {
+    var tokenId = localStorage.getItem('deviceTokenId');
+    if (!tokenId) {
+        // Menampilkan notifikasi jika tidak ada token ID
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'No token ID saved',
+            showConfirmButton: false
+        });
+    } else {
+        Swal.fire({
+            title: 'Enter your password',
+            input: 'password',
+            inputAttributes: {
+                autocapitalize: 'off',
+                autocorrect: 'off'
+            },
+            showCancelButton: false,
+            showConfirmButton: false,
+            showLoaderOnConfirm: true,
+            preConfirm: (password) => {
+                if (password === "Dafam@188") {
                     // Mengirim permintaan ke server untuk update status
                     $.ajax({
                         url: 'updateDeviceStatus.php',
@@ -185,25 +193,17 @@
                         }
                     });
                 } else {
-                    // Menampilkan notifikasi jika tidak ada token ID
                     Swal.fire({
                         icon: 'error',
-                        title: 'Error',
-                        text: 'No token ID saved',
+                        title: 'Authentication failed',
+                        text: 'Incorrect password',
                         showConfirmButton: false
                     });
                 }
-            } else {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Authentication failed',
-                    text: 'Incorrect password',
-                    showConfirmButton: false
-                });
-            }
-        },
-        allowOutsideClick: () => !Swal.isLoading()
-    });
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        });
+    }
 });
     </script>
 </body>
