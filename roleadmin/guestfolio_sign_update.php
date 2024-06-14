@@ -31,9 +31,10 @@ if ($stmtRegform = mysqli_prepare($connection, $queryRegform)) {
             'message' => 'Token perangkat berhasil diperbarui di regform.'
         ];
     } else {
+        // Jika tidak ada perubahan data di regform, tetap set status ke success tapi ubah pesannya
         $_SESSION['info'] = [
-            'status' => 'failed',
-            'message' => 'Tidak ada perubahan data atau update gagal di regform.'
+            'status' => 'success',
+            'message' => 'Tidak ada perubahan data di regform.'
         ];
     }
 
@@ -66,4 +67,3 @@ if ($stmtTokenDevice = mysqli_prepare($connection, $queryTokenDevice)) {
 
 header('Location: regform.php');
 exit;
-?>
