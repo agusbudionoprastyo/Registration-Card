@@ -156,65 +156,137 @@ function sendData(id, signatureData, pdfFile, folio) { // Ganti 'device_token' d
     xhr.send(formData);
 }
 
+// document.getElementById('pairing-btn').addEventListener('click', function() {
+//     // Cek jika local storage sudah memiliki token_id
+//     if (!localStorage.getItem('deviceTokenId')) {
+//         // Jika tidak ada token_id, lakukan AJAX untuk pairing
+//         $.ajax({
+//             url: 'getToken.php',
+//             type: 'GET',
+//             success: function(response) {
+//                 var data = JSON.parse(response); // Parse JSON response
+//                 if (!data.error) {
+//                     // Menyimpan token_id ke local storage
+//                     localStorage.setItem('deviceTokenId', data.token_id);
+//                     // alert("Token ID telah disimpan: " + data.token_id);
+//                     Swal.fire({
+//                         icon: 'success',
+//                         title: 'Paired',
+//                         text: 'Token ID saved ' + data.token_id,
+//                         showConfirmButton: false
+//                     }).then(() => {
+//                         // Kirim permintaan untuk update status
+//                         $.ajax({
+//                             url: 'PairUnpairDevice.php',
+//                             type: 'POST',
+//                             data: { token_id: data.token_id, status: '1'},
+//                             success: function(updateResponse) {
+//                                 console.log("Status updated successfully");
+//                                 // Reload halaman setelah status berhasil diupdate
+//                                 location.reload();
+//                             },
+//                             error: function() {
+//                                 console.error("Failed to update status");
+//                             }
+//                         });
+//                     });
+//                 } else {
+//                     // alert("Error: " + data.error);
+//                     Swal.fire({
+//                         icon: 'error',
+//                         title: 'Oops...',
+//                         text: 'Error : ' + data.error,
+//                         showConfirmButton: false
+//                     });
+//                 }
+//             },
+//             error: function() {
+//                 alert("Error fetching data");
+//             }
+//         });
+//     } else {
+//         // Jika token_id sudah ada, beri notifikasi bahwa device sudah dipair
+//         // alert("Device sudah dipair dengan token ID: " + localStorage.getItem('deviceTokenId'));
+//         Swal.fire({
+//             icon: 'warning',
+//             title: 'Oops...',
+//             text: 'Device already pair with token ID: ' + localStorage.getItem('deviceTokenId'),
+//             showConfirmButton: false
+//         });
+//     }
+//    });
+
 document.getElementById('pairing-btn').addEventListener('click', function() {
     // Cek jika local storage sudah memiliki token_id
     if (!localStorage.getItem('deviceTokenId')) {
-        // Jika tidak ada token_id, lakukan AJAX untuk pairing
-        $.ajax({
-            url: 'getUnpairedDevice.php',
-            type: 'GET',
-            success: function(response) {
-                var data = JSON.parse(response); // Parse JSON response
-                if (!data.error) {
-                    // Menyimpan token_id ke local storage
-                    localStorage.setItem('deviceTokenId', data.token_id);
-                    // alert("Token ID telah disimpan: " + data.token_id);
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Paired',
-                        text: 'Token ID saved ' + data.token_id,
-                        showConfirmButton: false
-                    }).then(() => {
-                        // Kirim permintaan untuk update status
-                        $.ajax({
-                            url: 'PairUnpairDevice.php',
-                            type: 'POST',
-                            data: { token_id: data.token_id, status: '1'},
-                            success: function(updateResponse) {
-                                console.log("Status updated successfully");
-                                // Reload halaman setelah status berhasil diupdate
-                                location.reload();
-                            },
-                            error: function() {
-                                console.error("Failed to update status");
-                            }
-                        });
-                    });
-                } else {
-                    // alert("Error: " + data.error);
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: 'Error : ' + data.error,
-                        showConfirmButton: false
-                    });
-                }
+        // Jika tidak ada token_id, minta user untuk memasukkan token_id
+        Swal.fire({
+            title: 'Enter Token ID',
+            input: 'text',
+            inputAttributes: {
+                autocapitalize: 'off'
             },
-            error: function() {
-                alert("Error fetching data");
+            showCancelButton: true,
+            confirmButtonText: 'Verify',
+            showLoaderOnConfirm: true,
+            preConfirm: (token_id) => {
+                // Lakukan AJAX untuk memeriksa token_id
+                return fetch(`getToken.php`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                    },
+                    body: `token_id=${token_id}`
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        throw new Error(data.error);
+                    }
+                    return data;
+                })
+                .catch(error => {
+                    Swal.showValidationMessage(`Request failed: ${error}`);
+                });
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Menyimpan token_id ke local storage
+                localStorage.setItem('deviceTokenId', result.value.token_id);
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Paired',
+                    text: 'Token ID verified and saved: ' + result.value.token_id,
+                    showConfirmButton: false
+                }).then(() => {
+                    // Kirim permintaan untuk update status
+                    $.ajax({
+                        url: 'PairUnpairDevice.php',
+                        type: 'POST',
+                        data: { token_id: result.value.token_id, status: '1' },
+                        success: function(updateResponse) {
+                            console.log("Status updated successfully");
+                            // Reload halaman setelah status berhasil diupdate
+                            location.reload();
+                        },
+                        error: function() {
+                            console.error("Failed to update status");
+                        }
+                    });
+                });
             }
         });
     } else {
         // Jika token_id sudah ada, beri notifikasi bahwa device sudah dipair
-        // alert("Device sudah dipair dengan token ID: " + localStorage.getItem('deviceTokenId'));
         Swal.fire({
             icon: 'warning',
             title: 'Oops...',
-            text: 'Device already pair with token ID: ' + localStorage.getItem('deviceTokenId'),
+            text: 'Device already paired with token ID: ' + localStorage.getItem('deviceTokenId'),
             showConfirmButton: false
         });
     }
-   });
+});
 
 document.getElementById('unpair-btn').addEventListener('click', function() {
 var tokenId = localStorage.getItem('deviceTokenId');

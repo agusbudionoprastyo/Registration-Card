@@ -1,7 +1,10 @@
 <?php
 require_once 'helper/connection.php';
 
-$query = mysqli_query($connection, "SELECT token_id FROM token_device WHERE status = '0' LIMIT 1");
+// Mendapatkan token_id dari input POST
+$token_id = isset($_POST['token_id']) ? $_POST['token_id'] : '';
+
+$query = mysqli_query($connection, "SELECT token_id FROM token_device WHERE token_id = '$token_id'");
 
 if (mysqli_num_rows($query) > 0) {
     $row = mysqli_fetch_assoc($query);
