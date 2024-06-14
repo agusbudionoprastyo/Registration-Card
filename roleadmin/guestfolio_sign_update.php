@@ -14,31 +14,53 @@ if ($tokenId === null || $guestfolioId === null || !is_numeric($tokenId) || !is_
     exit;
 }
 
-// Query untuk update
-$query = "UPDATE regform SET gf_device_token = ? WHERE id = ?";
+// Query untuk update gf_device_token di regform
+$queryRegform = "UPDATE regform SET gf_device_token = ? WHERE id = ?";
 
-// Persiapan statement untuk keamanan
-if ($stmt = mysqli_prepare($connection, $query)) {
-    mysqli_stmt_bind_param($stmt, "ii", $tokenId, $guestfolioId);
-    mysqli_stmt_execute($stmt);
+// Query untuk update regform_id di token_device
+$queryTokenDevice = "UPDATE token_device SET regform_id = ? WHERE token_id = ?";
 
-    if (mysqli_stmt_affected_rows($stmt) == 0) {
+// Persiapan statement untuk regform
+if ($stmtRegform = mysqli_prepare($connection, $queryRegform)) {
+    mysqli_stmt_bind_param($stmtRegform, "ii", $tokenId, $guestfolioId);
+    mysqli_stmt_execute($stmtRegform);
+
+    if (mysqli_stmt_affected_rows($stmtRegform) > 0) {
         $_SESSION['info'] = [
             'status' => 'success',
-            'message' => 'Token perangkat berhasil diperbarui.'
+            'message' => 'Token perangkat berhasil diperbarui di regform.'
         ];
     } else {
         $_SESSION['info'] = [
             'status' => 'failed',
-            'message' => 'Tidak ada perubahan data atau update gagal.'
+            'message' => 'Tidak ada perubahan data atau update gagal di regform.'
         ];
     }
 
-    mysqli_stmt_close($stmt);
+    mysqli_stmt_close($stmtRegform);
 } else {
     $_SESSION['info'] = [
         'status' => 'failed',
-        'message' => 'Kesalahan saat menyiapkan query: ' . mysqli_error($connection)
+        'message' => 'Kesalahan saat menyiapkan query regform: ' . mysqli_error($connection)
+    ];
+}
+
+// Persiapan statement untuk token_device
+if ($stmtTokenDevice = mysqli_prepare($connection, $queryTokenDevice)) {
+    mysqli_stmt_bind_param($stmtTokenDevice, "ii", $guestfolioId, $tokenId);
+    mysqli_stmt_execute($stmtTokenDevice);
+
+    if (mysqli_stmt_affected_rows($stmtTokenDevice) > 0) {
+        $_SESSION['info']['message'] .= ' dan regform_id berhasil diperbarui di token_device.';
+    } else {
+        $_SESSION['info']['message'] .= ' Tidak ada perubahan data atau update gagal di token_device.';
+    }
+
+    mysqli_stmt_close($stmtTokenDevice);
+} else {
+    $_SESSION['info'] = [
+        'status' => 'failed',
+        'message' => 'Kesalahan saat menyiapkan query token_device: ' . mysqli_error($connection)
     ];
 }
 
