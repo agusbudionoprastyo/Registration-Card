@@ -12,9 +12,15 @@ $deviceToken = $_GET['device_token'] ?? 'default_token'; // Gunakan default toke
 // Looping untuk mengirimkan pembaruan berkala
 while (true) {
     // Ambil data dari database
-    $query = mysqli_query($connection, "SELECT *
-    FROM regform
-    WHERE gf_device_token = '$deviceToken'");
+    // $query = mysqli_query($connection, "SELECT *
+    // FROM regform
+    // WHERE gf_device_token = '$deviceToken'");
+    // $row = mysqli_fetch_array($query);
+    $query = mysqli_query($connection, "SELECT regform.* 
+    FROM regform 
+    INNER JOIN token_device ON regform.id = token_device.regform_id 
+    WHERE regform.gf_device_token = '$deviceToken' 
+    LIMIT 1");
     $row = mysqli_fetch_array($query);
 
     // Kirim data ke klien

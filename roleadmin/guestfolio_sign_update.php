@@ -22,7 +22,7 @@ if ($stmt = mysqli_prepare($connection, $query)) {
     mysqli_stmt_bind_param($stmt, "ii", $tokenId, $guestfolioId);
     mysqli_stmt_execute($stmt);
 
-    if (mysqli_stmt_affected_rows($stmt) > 0) {
+    if (mysqli_stmt_affected_rows($stmt) == 0) {
         $_SESSION['info'] = [
             'status' => 'success',
             'message' => 'Token perangkat berhasil diperbarui.'
