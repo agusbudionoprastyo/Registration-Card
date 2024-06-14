@@ -225,7 +225,7 @@ document.getElementById('pairing-btn').addEventListener('click', function() {
             input: 'text',
             inputAttributes: {
                 autocapitalize: 'off',
-                style: 'margin-bottom: 20px;' // Menambahkan margin bottom 20px
+                style: 'margin-bottom: 40px;' // Menambahkan margin bottom 20px
             },
             showConfirmButton: false,
             showCancelButton: false,
