@@ -36,11 +36,18 @@
                 height: auto; /* Tinggi canvas disesuaikan secara otomatis */
             }
 
+            /* Mengatur container tombol */
+            #button-container {
+                display: flex; /* Menggunakan flexbox */
+                justify-content: flex-start; /* Menyelaraskan tombol dari kiri */
+                gap: 10px; /* Memberikan jarak antar tombol */
+            }
+
+            /* Mengatur gaya tombol yang mengambang */
             .floating-btn {
-                position: flex;
-                top: 5px;
-                z-index: 1000;
-                margin-left: 20px;
+                position: relative; /* Menggunakan relative untuk posisi relatif dalam flexbox */
+                top: 5px; /* Jarak dari atas */
+                z-index: 1000; /* Z-index untuk stacking */
             }
         </style>
     <script>
@@ -74,9 +81,11 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
+            <div id="button-container">
         <button type="button" class="floating-btn" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
         <button type="button" class="floating-btn" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
         <button type="button" class="floating-btn" id="unpair-btn" style="display:none;"><i class="fa-solid fa-x" style="color: #ff0000;"></i></button>
+        </div>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
