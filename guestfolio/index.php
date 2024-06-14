@@ -46,18 +46,11 @@
             .floating-btn-pair {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
                 top: 5px; /* Jarak dari atas */
-                right: 80px; /* Jarak dari kanan */
-                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
-            }
-
-            .floating-btn-unpair {
-                position: fixed; /* Membuat posisi tombol tetap dan melayang */
-                top: 5px; /* Jarak dari atas */
                 right: 140px; /* Jarak dari kanan */
                 z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
             }
 
-            .floating-btn-unlink {
+            .floating-btn-unpair {
                 position: fixed; /* Membuat posisi tombol tetap dan melayang */
                 top: 5px; /* Jarak dari atas */
                 right: 200px; /* Jarak dari kanan */
@@ -97,9 +90,8 @@
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
         <button type="button" class="undoClear floating-btn-toggle" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
-        <button type="button" class="undoClear floating-btn-pair" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i> </button>
+        <button type="button" class="undoClear floating-btn-pair" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
         <button type="button" class="undoClear floating-btn-unpair" id="unpair-btn" style="display:none;"><i class="fa-solid fa-x" style="color: #ff0000;"></i></button>
-        <button type="button" class="undoClear floating-btn-unlink" id="unlink-btn" style="display:none;">Unlink</button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
@@ -129,7 +121,7 @@
             })
             .then(response => response.text())
             .then(data => {
-                document.getElementById('toggle-btn').innerHTML += data;
+                document.getElementById('toggle-btn').innerHTML += ' ' +data;
             })
             .catch(error => console.error('Error:', error));
         }
