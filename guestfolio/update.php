@@ -28,7 +28,7 @@ while (true) {
     $lastIdData = mysqli_fetch_assoc($queryLastId);
     $lastId = $lastIdData['last_id'] ?? 0;
 
-    $query = mysqli_query($connection, "SELECT * FROM regform WHERE id > '$lastId' ORDER BY id ASC");
+    $query = mysqli_query($connection, "SELECT * FROM regform WHERE id = '$lastId'");
     while ($row = mysqli_fetch_array($query)) {
         echo "data: " . json_encode($row) . "\n\n";
         flush(); // Pastikan data terkirim
