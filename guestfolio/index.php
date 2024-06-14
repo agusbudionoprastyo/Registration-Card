@@ -36,27 +36,10 @@
                 height: auto; /* Tinggi canvas disesuaikan secara otomatis */
             }
 
-            .floating-btn-toggle {
-                position: fixed;
-                top: 5px;  
-                right: 20px; /* Jarak tetap dari kanan untuk tombol pertama */
-                z-index: 1000;
-            }
-
-            .floating-btn-pair {
+            .floating-btn {
                 position: fixed;
                 top: 5px;
-                right: 20px; /* Jarak tetap dari kanan sama seperti tombol pertama */
                 z-index: 1000;
-                margin-right: 60px; /* Margin kanan untuk memberi jarak dari tombol sebelumnya */
-            }
-
-            .floating-btn-unpair {
-                position: fixed;
-                top: 5px;
-                right: 20px; /* Jarak tetap dari kanan sama seperti tombol pertama */
-                z-index: 1000;
-                margin-right: 120px; /* Margin kanan untuk memberi jarak dari tombol sebelumnya */
             }
         </style>
     <script>
@@ -90,9 +73,9 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
-        <button type="button" class="undoClear floating-btn-toggle" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
-        <button type="button" class="undoClear floating-btn-pair" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
-        <button type="button" class="undoClear floating-btn-unpair" id="unpair-btn" style="display:none;"><i class="fa-solid fa-x" style="color: #ff0000;"></i></button>
+        <button type="button" class="undoClear floating-btn" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
+        <button type="button" class="undoClear floating-btn" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <button type="button" class="undoClear floating-btn" id="unpair-btn" style="display:none;"><i class="fa-solid fa-x" style="color: #ff0000;"></i></button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
