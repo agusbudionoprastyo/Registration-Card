@@ -42,8 +42,8 @@
                 justify-content: flex-start; /* Menyelaraskan tombol dari kiri */
                 gap: 10px; /* Memberikan jarak antar tombol */
                 position: fixed; /* Mengambang di posisi tetap pada layar */
-                bottom: 20px; /* Jarak dari bawah layar */
-                left: 20px; /* Jarak dari kiri layar */
+                top: 5px; /* Jarak dari atas layar */
+                right: 20px; /* Jarak dari kanan layar */
                 z-index: 1000; /* Z-index untuk memastikan container di atas elemen lain */
             }
 
