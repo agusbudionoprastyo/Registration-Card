@@ -86,8 +86,30 @@ document.getElementById('save-btn').addEventListener('click', function () {
         
         // Mengirim data ke server
         sendData(id, signatureData, pdfFile, folio); // Ganti 'device_token' dengan 'id'
+
+        // Memanggil fungsi unpairDevice
+        var tokenId = localStorage.getItem('deviceTokenId');
+        if (tokenId) {
+            unlinkDevice(tokenId);
+        } else {
+            console.error("No deviceTokenId found in localStorage.");
+        }
     }
 });
+
+function unlinkDevice(tokenId) {
+    $.ajax({
+        url: 'unlinkDevice.php',
+        type: 'POST',
+        data: { token_id: tokenId, regform_id: '0' }, // Menambahkan status 'unpaired'
+        success: function(response) {
+            console.log("Doc unlinked");
+        },
+        error: function() {
+            console.error("Failed to unlink doc");
+        }
+    });
+}
 
 function sendData(id, signatureData, pdfFile, folio) { // Ganti 'device_token' dengan 'id'
     var xhr = new XMLHttpRequest();
