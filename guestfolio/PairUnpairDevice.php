@@ -1,7 +1,7 @@
 <?php
 require_once 'helper/connection.php';
 
-if (isset($_POST['token_id']) && isset($_POST['status'])) {
+if (isset($_POST['token_id'])) {
     $token_id = $_POST['token_id'];
 
     // Memperbarui query untuk menggunakan status yang diterima dari permintaan dan mengatur regform_id menjadi 0

@@ -306,7 +306,7 @@ if (!tokenId) {
      inputAttributes: {
          autocapitalize: 'off',
          autocorrect: 'off',
-        style: 'margin-bottom: 40px;' // Menambahkan margin bottom 40px
+         style: 'margin-bottom: 40px;' // Menambahkan margin bottom 40px
      },
      showCancelButton: false,
      showConfirmButton: false,
