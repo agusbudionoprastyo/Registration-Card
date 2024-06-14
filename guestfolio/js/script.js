@@ -224,10 +224,11 @@ document.getElementById('pairing-btn').addEventListener('click', function() {
             title: 'Enter Token ID',
             input: 'text',
             inputAttributes: {
-                autocapitalize: 'off'
+                autocapitalize: 'off',
+                style: 'margin-bottom: 20px;' // Menambahkan margin bottom 20px
             },
-            showCancelButton: true,
-            confirmButtonText: 'Verify',
+            showConfirmButton: false,
+            showCancelButton: false,
             showLoaderOnConfirm: true,
             preConfirm: (token_id) => {
                 // Lakukan AJAX untuk memeriksa token_id
