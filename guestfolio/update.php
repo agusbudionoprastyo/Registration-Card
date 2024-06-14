@@ -9,18 +9,15 @@ header('Cache-Control: no-cache');
 // Ambil device_token dari data GET
 $deviceToken = $_GET['device_token'] ?? 'default_token'; // Gunakan default token jika tidak ada yang dikirim
 
+// Ambil last_id dari data GET
+$lastId = $_GET['last_id'] ?? 0; // Gunakan 0 sebagai default jika tidak ada yang dikirim
+
 // Looping untuk mengirimkan pembaruan berkala
 while (true) {
-    // Ambil data dari database
-    // $query = mysqli_query($connection, "SELECT *
-    // FROM regform
-    // WHERE gf_device_token = '$deviceToken'");
-    // $row = mysqli_fetch_array($query);
-    $query = mysqli_query($connection, "SELECT regform.* 
+    $query = mysqli_query($connection, "SELECT * 
     FROM regform 
-    INNER JOIN token_device ON regform.id = token_device.regform_id 
-    WHERE regform.gf_device_token = '$deviceToken' 
-    LIMIT 1");
+    WHERE gf_device_token = '$deviceToken'
+    AND id = '$lastId'");
     $row = mysqli_fetch_array($query);
 
     // Kirim data ke klien
