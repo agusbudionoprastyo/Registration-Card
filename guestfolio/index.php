@@ -39,24 +39,25 @@
             .floating-btn-toggle {
                 position: fixed;
                 top: 5px;  
-                right: 20px; /* Sesuaikan berdasarkan lebar dan margin tombol lain */
+                right: 20px; /* Jarak tetap dari kanan untuk tombol pertama */
                 z-index: 1000;
             }
 
             .floating-btn-pair {
-                position: fixed; /* Membuat posisi tombol tetap dan melayang */
-                top: 5px; /* Jarak dari atas */
-                right: 140px; /* Jarak dari kanan */
-                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+                position: fixed;
+                top: 5px;
+                right: 20px; /* Jarak tetap dari kanan sama seperti tombol pertama */
+                z-index: 1000;
+                margin-right: 60px; /* Margin kanan untuk memberi jarak dari tombol sebelumnya */
             }
 
             .floating-btn-unpair {
-                position: fixed; /* Membuat posisi tombol tetap dan melayang */
-                top: 5px; /* Jarak dari atas */
-                right: 200px; /* Jarak dari kanan */
-                z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+                position: fixed;
+                top: 5px;
+                right: 20px; /* Jarak tetap dari kanan sama seperti tombol pertama */
+                z-index: 1000;
+                margin-right: 120px; /* Margin kanan untuk memberi jarak dari tombol sebelumnya */
             }
-
         </style>
     <script>
 
