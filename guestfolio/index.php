@@ -116,6 +116,27 @@
     </form>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var tokenId = localStorage.getItem('deviceTokenId'); // Pastikan kunci 'token_id' sesuai dengan yang Anda set di localStorage
+
+        if (tokenId) {
+            fetch('fetch_device_name.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'deviceTokenId=' + tokenId
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('toggle-btn').innerHTML += data;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    });
+    </script>
+
+    <script>
     document.getElementById('toggle-btn').addEventListener('click', function() {
         var btnPair = document.getElementById('pairing-btn');
         var btnUnpair = document.getElementById('unpair-btn');
