@@ -186,7 +186,10 @@ document.getElementById('pairing-btn').addEventListener('click', function() {
                      error: function() {
                          console.error("Failed to update status");
                      }
-                 });
+                 }).then(() => {
+                    // Reload halaman setelah notifikasi ditutup
+                    location.reload();
+                });
              } else {
                  // alert("Error: " + data.error);
                  Swal.fire({
