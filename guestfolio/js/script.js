@@ -55,14 +55,22 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error: ' + reason);
         });
 
-        // Periksa jika data.id sama dengan id terakhir yang diterima
-        if (data.id === lastId) {
-            eventSource.close(); // Tutup koneksi EventSource
-            console.log(`EventSource ditutup karena data.id (${data.id}) sama dengan id sebelumnya`);
-        } else {
-            lastId = data.id; // Perbarui lastId dengan id baru
-        }
-    };
+    //     // Periksa jika data.id sama dengan id terakhir yang diterima
+    //     if (data.id === lastId) {
+    //         eventSource.close(); // Tutup koneksi EventSource
+    //         console.log(`EventSource ditutup karena data.id (${data.id}) sama dengan id sebelumnya`);
+    //     } else {
+    //         lastId = data.id; // Perbarui lastId dengan id baru
+    //     }
+    // };
+
+
+    // Periksa jika data.id sama dengan id terakhir yang diterima
+    if (data.id !== lastId) {
+        lastId = data.id; // Perbarui lastId dengan id baru
+        // Tambahkan logika untuk memperbarui tampilan di sini jika diperlukan
+    }
+};
 
     eventSource.onerror = function(error) {
         console.error('EventSource failed:', error);

@@ -28,13 +28,13 @@ if ($stmtRegform = mysqli_prepare($connection, $queryRegform)) {
     if (mysqli_stmt_affected_rows($stmtRegform) > 0) {
         $_SESSION['info'] = [
             'status' => 'success',
-            'message' => 'Token perangkat berhasil diperbarui di regform.'
+            'message' => 'Token device berhasil dikirim'
         ];
     } else {
         // Jika tidak ada perubahan data di regform, tetap set status ke success tapi ubah pesannya
         $_SESSION['info'] = [
             'status' => 'success',
-            'message' => 'Tidak ada perubahan data di regform.'
+            'message' => 'Token device berhasil dikirim'
         ];
     }
 
@@ -52,9 +52,9 @@ if ($stmtTokenDevice = mysqli_prepare($connection, $queryTokenDevice)) {
     mysqli_stmt_execute($stmtTokenDevice);
 
     if (mysqli_stmt_affected_rows($stmtTokenDevice) > 0) {
-        $_SESSION['info']['message'] .= ' dan regform_id berhasil diperbarui di token_device.';
+        $_SESSION['info']['message'] .= ' dan siap untuk di tandatangani';
     } else {
-        $_SESSION['info']['message'] .= ' Tidak ada perubahan data atau update gagal di token_device.';
+        $_SESSION['info']['message'] .= ' Tidak ada perubahan data';
     }
 
     mysqli_stmt_close($stmtTokenDevice);
