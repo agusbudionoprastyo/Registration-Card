@@ -40,6 +40,7 @@
                 position: fixed;
                 top: 5px;
                 z-index: 1000;
+                margin-left: 20px;
             }
         </style>
     <script>
@@ -73,9 +74,9 @@
         <input type="hidden" id="pdfFile"/>
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
-        <button type="button" class="undoClear floating-btn" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
-        <button type="button" class="undoClear floating-btn" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
-        <button type="button" class="undoClear floating-btn" id="unpair-btn" style="display:none;"><i class="fa-solid fa-x" style="color: #ff0000;"></i></button>
+        <button type="button" class="floating-btn" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
+        <button type="button" class="floating-btn" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
+        <button type="button" class="floating-btn" id="unpair-btn" style="display:none;"><i class="fa-solid fa-x" style="color: #ff0000;"></i></button>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
             <canvas></canvas>
