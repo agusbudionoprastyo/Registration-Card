@@ -10,7 +10,7 @@ header('Cache-Control: no-cache');
 $deviceToken = $_GET['device_token'] ?? 'default_token'; // Gunakan default token jika tidak ada yang dikirim
 
 // Ambil last_id dari tabel device_token
-$queryLastId = mysqli_query($connection, "SELECT regform_id AS last_id FROM token_device WHERE device_token = '$deviceToken'");
+$queryLastId = mysqli_query($connection, "SELECT regform_id AS last_id FROM token_device WHERE token_id = '$deviceToken'");
 $lastIdData = mysqli_fetch_assoc($queryLastId);
 $lastId = $lastIdData['last_id'] ?? 0; // Gunakan 0 sebagai default jika tidak ada data
 
