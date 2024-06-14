@@ -1,37 +1,11 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var deviceToken = localStorage.getItem('deviceTokenId') || 'default_token';
-//     let eventSource = new EventSource(`../update.php?device_token=${deviceToken}`);
-
-//     let lastId = null; // Variabel untuk menyimpan id terakhir yang diterima
-
-//     eventSource.onmessage = function(event) {
-//         const data = JSON.parse(event.data);
-
-//         // Tampilkan notifikasi
-//         Swal.fire({
-//             icon: 'info',
-//             title: 'Guestfolio',
-//             text: `Guestfolio ${data.folio}, nama ${data.nama} siap untuk di tandatangani!`,
-//             showConfirmButton: false
-//         });
 document.addEventListener('DOMContentLoaded', function() {
     var deviceToken = localStorage.getItem('deviceTokenId') || 'default_token';
+    let eventSource = new EventSource(`../update.php?device_token=${deviceToken}`);
+
     let lastId = null; // Variabel untuk menyimpan id terakhir yang diterima
-
-    // Fungsi untuk membuat EventSource dengan lastId
-    function createEventSource(lastId) {
-        let url = `../update.php?device_token=${deviceToken}`;
-        if (lastId) {
-            url += `&last_id=${lastId}`;
-        }
-        return new EventSource(url);
-    }
-
-    let eventSource = createEventSource(lastId);
 
     eventSource.onmessage = function(event) {
         const data = JSON.parse(event.data);
-        lastId = data.id; // Perbarui lastId dengan id dari data yang diterima
 
         // Tampilkan notifikasi
         Swal.fire({
@@ -41,9 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
             showConfirmButton: false
         });
 
-        // Tutup dan buka kembali EventSource dengan lastId yang baru
-        eventSource.close();
-        eventSource = createEventSource(lastId);
         // Update form fields with received data
         document.getElementById('id').value = data.id;
         document.getElementById('pdfFile').value = data.at_guestfolio;
