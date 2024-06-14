@@ -225,7 +225,7 @@ document.getElementById('pairing-btn').addEventListener('click', function() {
             input: 'text',
             inputAttributes: {
                 autocapitalize: 'off',
-                style: 'margin-bottom: 40px;' // Menambahkan margin bottom 20px
+                style: 'margin-bottom: 40px;' // Menambahkan margin bottom 40px
             },
             showConfirmButton: false,
             showCancelButton: false,
@@ -258,14 +258,14 @@ document.getElementById('pairing-btn').addEventListener('click', function() {
                 Swal.fire({
                     icon: 'success',
                     title: 'Paired',
-                    text: 'Token ID verified and saved: ' + result.value.token_id,
+                    text: 'Token ID verified ' + result.value.token_id,
                     showConfirmButton: false
                 }).then(() => {
                     // Kirim permintaan untuk update status
                     $.ajax({
                         url: 'PairUnpairDevice.php',
                         type: 'POST',
-                        data: { token_id: result.value.token_id, status: '1' },
+                        data: { token_id: result.value.token_id},
                         success: function(updateResponse) {
                             console.log("Status updated successfully");
                             // Reload halaman setelah status berhasil diupdate
@@ -283,7 +283,7 @@ document.getElementById('pairing-btn').addEventListener('click', function() {
         Swal.fire({
             icon: 'warning',
             title: 'Oops...',
-            text: 'Device already paired with token ID: ' + localStorage.getItem('deviceTokenId'),
+            text: 'Device already paired with token ID ' + localStorage.getItem('deviceTokenId'),
             showConfirmButton: false
         });
     }
@@ -305,7 +305,8 @@ if (!tokenId) {
      input: 'password',
      inputAttributes: {
          autocapitalize: 'off',
-         autocorrect: 'off'
+         autocorrect: 'off',
+        style: 'margin-bottom: 40px;' // Menambahkan margin bottom 40px
      },
      showCancelButton: false,
      showConfirmButton: false,
@@ -316,7 +317,7 @@ if (!tokenId) {
              $.ajax({
                  url: 'PairUnpairDevice.php',
                  type: 'POST',
-                 data: { token_id: tokenId, status: '0' }, // Menambahkan status 'unpaired'
+                 data: { token_id: tokenId}, // Menambahkan status 'unpaired'
                  success: function(response) {
                      console.log("Status updated successfully");
                      // Menghapus token_id dari local storage setelah berhasil update status
