@@ -86,9 +86,9 @@
         <input type="hidden" id="folio"/>
         <div id="pdf-container"></div>
             <div id="button-container">
-        <button type="button" class="floating-btn" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
         <button type="button" class="floating-btn" id="pairing-btn" style="display:none;"><i class="fa-solid fa-arrows-rotate"></i></button>
         <button type="button" class="floating-btn" id="unpair-btn" style="display:none;"><i class="fa-solid fa-x" style="color: #ff0000;"></i></button>
+        <button type="button" class="floating-btn" id="toggle-btn"><i class="fa-brands fa-apple"></i></button>
         </div>
         <div id="signature-pad">
             <label><h3>SIGNATURE</h3></label>
