@@ -251,7 +251,10 @@ if (!tokenId) {
                          title: 'Unpaired',
                          text: 'Unpairing device success, token removed',
                          showConfirmButton: false
-                     });
+                     }).then(() => {
+                        // Reload halaman setelah notifikasi ditutup
+                        location.reload();
+                    });
                  },
                  error: function() {
                      console.error("Failed to update status");
