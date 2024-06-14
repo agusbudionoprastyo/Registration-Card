@@ -38,9 +38,13 @@
 
             /* Mengatur container tombol */
             #button-container {
-                display: flex; /* Menggunakan flexbox */
+                display: flex; /* Menggunakan flexbox untuk menyusun tombol secara sejajar */
                 justify-content: flex-start; /* Menyelaraskan tombol dari kiri */
                 gap: 10px; /* Memberikan jarak antar tombol */
+                position: fixed; /* Mengambang di posisi tetap pada layar */
+                bottom: 20px; /* Jarak dari bawah layar */
+                left: 20px; /* Jarak dari kiri layar */
+                z-index: 1000; /* Z-index untuk memastikan container di atas elemen lain */
             }
 
             /* Mengatur gaya tombol yang mengambang */
