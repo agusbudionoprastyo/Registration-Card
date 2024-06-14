@@ -37,7 +37,7 @@
             }
 
             .floating-btn {
-                position: fixed;
+                position: flex;
                 top: 5px;
                 z-index: 1000;
                 margin-left: 20px;
