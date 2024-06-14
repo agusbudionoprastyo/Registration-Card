@@ -11,20 +11,30 @@ $deviceToken = $_GET['device_token'] ?? 'default_token'; // Gunakan default toke
 
 // Ambil last_id dari tabel device_token
 $queryLastId = mysqli_query($connection, "SELECT regform_id AS last_id FROM token_device WHERE token_id = '$deviceToken'");
+if (!$queryLastId) {
+    echo "Error: " . mysqli_error($connection) . "\n"; // Tampilkan error jika query gagal
+}
 $lastIdData = mysqli_fetch_assoc($queryLastId);
-$lastId = $lastIdData['last_id'] ?? 0; // Gunakan 0 sebagai default jika tidak ada data
+if ($lastIdData) {
+    $lastId = $lastIdData['last_id'] ?? 0;
+    echo "Fetched lastId from token_device: $lastId\n"; // Debug: Cetak lastId yang diambil
+} else {
+    echo "No data found for token_id: $deviceToken\n"; // Debug: Tidak ada data ditemukan
+}
 
-// Looping untuk mengirimkan pembaruan berkala
 while (true) {
-    $query = mysqli_query($connection, "SELECT * FROM regform WHERE id = '$lastId'");
+    // Ambil last_id dari tabel device_token setiap kali loop
+    $queryLastId = mysqli_query($connection, "SELECT regform_id AS last_id FROM token_device WHERE token_id = '$deviceToken'");
+    $lastIdData = mysqli_fetch_assoc($queryLastId);
+    $lastId = $lastIdData['last_id'] ?? 0;
+
+    $query = mysqli_query($connection, "SELECT * FROM regform WHERE id > '$lastId' ORDER BY id ASC");
     while ($row = mysqli_fetch_array($query)) {
-        // Kirim data ke klien
         echo "data: " . json_encode($row) . "\n\n";
         flush(); // Pastikan data terkirim
         $lastId = $row['id']; // Perbarui last_id dengan id terbaru yang dikirim
     }
 
-    // Tunggu beberapa waktu sebelum mengirimkan pembaruan berikutnya
     sleep(1); // Anda bisa sesuaikan waktu sesuai kebutuhan
 }
 ?>
